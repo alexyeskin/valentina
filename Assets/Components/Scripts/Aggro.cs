@@ -20,14 +20,10 @@ public class Aggro: MonoBehaviour
         if (other.CompareTag("Enemy")) {
             if (other.TryGetComponent(out Chasing chasing)) {
                 chasing.startChasing(transform);
-            } else {
-                Debug.Log("Chasing not found");
             }
             
             if (other.TryGetComponent(out RandomMovement movement)) {
                 movement.stopPatrol();
-            } else {
-                Debug.Log("RandomMovement not found");
             }
             
             combat.addTarget(other.gameObject);

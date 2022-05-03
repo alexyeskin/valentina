@@ -37,52 +37,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -10, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2493134920346340698
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 428422049996890389}
-  - component: {fileID: 2094211477595311645}
-  m_Layer: 0
-  m_Name: DamageDisplay
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &428422049996890389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493134920346340698}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3990376876046540537}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2094211477595311645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493134920346340698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c4ed23f9f9546918c233d9796d8414, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  floatingTextPrefub: {fileID: 8936118674929840526, guid: 471f3aa7e70b54dcdb51fb3da16ade26,
-    type: 3}
 --- !u!1 &2791989382249147380
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +287,6 @@ Transform:
   - {fileID: 8950920500227913364}
   - {fileID: 9190401165070065815}
   - {fileID: 6419726443900250863}
-  - {fileID: 428422049996890389}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -382,6 +335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cc01661819f4c4bad07f0e256b6643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floatingTextPrefub: {fileID: 8936118674929840526, guid: 471f3aa7e70b54dcdb51fb3da16ade26, type: 3}
+  deathEffectPrefub: {fileID: 4397334591890123670, guid: b0159ffb3464ec5478e3f6e6ce51d561, type: 3}
 --- !u!143 &6456562899086818718
 CharacterController:
   m_ObjectHideFlags: 0
@@ -834,8 +789,7 @@ MonoBehaviour:
   m_text: 555
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 118cd2abe7fc04c978b86083fdfacf4f, type: 2}
-  m_sharedMaterial: {fileID: 6665919529530024819, guid: 118cd2abe7fc04c978b86083fdfacf4f,
-    type: 2}
+  m_sharedMaterial: {fileID: 6665919529530024819, guid: 118cd2abe7fc04c978b86083fdfacf4f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -9,6 +9,9 @@ public class AnimationManager : MonoBehaviour
     
     GeneralMovement movement;
     
+    public GameObject floatingTextPrefub;
+    public GameObject deathEffectPrefub;
+    
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -25,6 +28,19 @@ public class AnimationManager : MonoBehaviour
     
     public void playAttackAnimation() {
         animator.SetTrigger("attack");
+    }
+    
+    public void playDeathEffect() {
+        Instantiate(deathEffectPrefub, transform.position, Quaternion.identity, transform);
+    }
+    
+    public void showFloatingDamageText(int damage) {
+        if (floatingTextPrefub) {
+            if (floatingTextPrefub.TryGetComponent(out FloatingText floatingText)) {
+                floatingText.text = damage.ToString();
+            }
+            Instantiate(floatingTextPrefub, transform.position, Quaternion.identity, transform);
+        }
     }
     
     void handleMovingAnimation()

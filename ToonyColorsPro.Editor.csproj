@@ -36,46 +36,48 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/CodeInjection.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Legacy/TCP2_ShaderGenerator.UIFeatures.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/ReorderableLayoutList.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Legacy/TCP2_ShaderGeneratorUtils.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Legacy/TCP2_MaterialInspector_SG.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Legacy/TCP2_ShaderGenerator.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Inspectors/TCP2_ShaderUpdateUnityTime_Editor.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Inspectors/TCP2_MaterialInspector.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/MaterialLayer.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/TCP2_RampGenerator.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/ShaderGenerator2.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Inspectors/MaterialInspector_SG2.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/TCP2_SmoothedNormalsUtility.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/Serialization.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/GlobalOptions.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Inspectors/TCP2_OutlineInspector.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/Config.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Utils/TCP2_GUI.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Utils/TCP2_Utils.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/Module.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/TCP2_BuildShaderPreprocessor.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/Tooltip.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/ShaderProperty.Implementations.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Legacy/TCP2_MaterialInspector_PBS_SG.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/SGUILayout.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/TCP2_Menu.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/ShaderProperty.CustomMaterialProperty.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Legacy/TCP2_MaterialInspector_SurfacePBS_SG.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Inspectors/MaterialInspector_Hybrid.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Inspectors/TCP2_MaterialInspector_PBS.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/ShaderProperty.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/Template.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Legacy/TCP2_Config.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/TCP2_GradientManager.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Shader Generator/UIFeatures.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Inspectors/TCP2_GetPosOnWater_Editor.cs" />
-     <Compile Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Utils/TCP2_ExpressionParser.cs" />
-     <None Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/ToonyColorsPro.Editor.asmdef" />
-     <None Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Fonts/Roboto/Roboto - Apache License.txt" />
-     <None Include="Assets/Scenes/JMO Assets/Toony Colors Pro/Editor/Fonts/sen/sen - SIL Open Font License.txt" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/TCP2_Upgrader.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/CodeInjection.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Legacy/TCP2_ShaderGenerator.UIFeatures.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/ReorderableLayoutList.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Legacy/TCP2_ShaderGeneratorUtils.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Legacy/TCP2_MaterialInspector_SG.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Legacy/TCP2_ShaderGenerator.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Inspectors/TCP2_ShaderUpdateUnityTime_Editor.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Inspectors/TCP2_MaterialInspector.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/MaterialLayer.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/TCP2_RampGenerator.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/ShaderGenerator2.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Inspectors/MaterialInspector_SG2.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/TCP2_SmoothedNormalsUtility.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/Serialization.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Importer/TCP2_ShaderPostProcessor.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/GlobalOptions.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Inspectors/TCP2_OutlineInspector.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/Config.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Utils/TCP2_GUI.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Utils/TCP2_Utils.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/Module.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/Tooltip.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/ShaderProperty.Implementations.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Legacy/TCP2_MaterialInspector_PBS_SG.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Importer/TCP2_ShaderImporter.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/SGUILayout.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/TCP2_Menu.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/ShaderProperty.CustomMaterialProperty.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Legacy/TCP2_MaterialInspector_SurfacePBS_SG.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Inspectors/MaterialInspector_Hybrid.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Inspectors/TCP2_MaterialInspector_PBS.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/ShaderProperty.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/Template.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Legacy/TCP2_Config.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/TCP2_GradientManager.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Shader Generator/UIFeatures.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Inspectors/TCP2_GetPosOnWater_Editor.cs" />
+     <Compile Include="Assets/Packages/Toony Colors Pro/Editor/Utils/TCP2_ExpressionParser.cs" />
+     <None Include="Assets/Packages/Toony Colors Pro/Editor/ToonyColorsPro.Editor.asmdef" />
+     <None Include="Assets/Packages/Toony Colors Pro/Editor/Fonts/Roboto/Roboto - Apache License.txt" />
+     <None Include="Assets/Packages/Toony Colors Pro/Editor/Fonts/sen/sen - SIL Open Font License.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -331,38 +333,26 @@
     <Reference Include="UnityEditor.iOS.Extensions">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="JMOAssets_CartoonFXFreeWelcome">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Assets/Scenes/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="JMOAssets_CartoonFXFreeWelcome">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Assets/Packages/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

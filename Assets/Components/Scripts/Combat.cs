@@ -51,8 +51,8 @@ public class Combat : MonoBehaviour
         var damageAmount = Random.Range(1, 25);
         
         // Todo Переместить всю логику с целью в саму цель, зачем тут работать с целью
-        DamageDisplaying damageDisplaying = target.GetComponentInChildren<DamageDisplaying>();
-        damageDisplaying.showFloatingDamageText(damageAmount);
+        AnimationManager animationManager = target.GetComponent<AnimationManager>();
+        animationManager.showFloatingDamageText(damageAmount);
         
         Stats targetStats = target.GetComponent<Stats>();
         

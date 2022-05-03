@@ -29,7 +29,7 @@ public class Chasing : MonoBehaviour
         movement.currentMovementSpeed = chasingMovementSpeed;
     }
     
-    public void endChasing() {
+    public void stopChasing() {
         isChasing = false;
     }
     

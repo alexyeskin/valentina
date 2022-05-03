@@ -72,10 +72,10 @@ public class RandomMovement : MonoBehaviour
     }
     
     void returnToSpawn() {
+        chasing.stopChasing();
         stats.restoreFullHealth();
         movement.currentMovement = movement.pointToMoveFrom(randomPoint);
         startPatrol();
-        chasing.endChasing();
     }
     
     public void startPatrol() {
