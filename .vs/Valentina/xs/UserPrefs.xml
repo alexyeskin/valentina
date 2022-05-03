@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{208212CD-EC0C-5A75-46C3-145FF9E4EE87}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UnityMovementAI/Scripts/Spawner.cs">
+    <Files>
+      <File FileName="Assets/UnityMovementAI/Scripts/Spawner.cs" Line="33" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Valentina" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Components" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+              <Node name="UnityMovementAI" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Units" expanded="True">
+                    <Node name="Movement" expanded="True" />
+                  </Node>
+                  <Node name="Spawner.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c64edd94-69da-4924-8be2-1c6a619267a1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
