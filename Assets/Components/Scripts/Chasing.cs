@@ -10,10 +10,11 @@ public class Chasing : MonoBehaviour
     private bool isChasing = false;
     public float chasingMovementSpeed = 5f;
     
-    void Start()
-    {
+    private void Awake() {
         movement = GetComponent<GeneralMovement>();
     }
+    
+    void Start() {}
     
     void FixedUpdate()
     {

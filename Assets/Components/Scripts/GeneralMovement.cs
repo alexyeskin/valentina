@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class GeneralMovement : MonoBehaviour
 {
+    Animator animator;
+    int isWalkingHash;
+    
     CharacterController characterController;
+    public Transform modelObject;
     
     public Vector3 currentMovement = Vector3.zero;
     
@@ -24,15 +28,19 @@ public class GeneralMovement : MonoBehaviour
     public float walkMovementSpeed = 3f;
     public float currentMovementSpeed = 3f;
     
-    void Start()
-    {
-        characterController = GetComponent<CharacterController>();
+    private void Awake() {
+        animator = GetComponentInParent<Animator>();
+        characterController = GetComponentInParent<CharacterController>();
+    }
+    
+    private void Start() {
+        isWalkingHash = Animator.StringToHash("isWalking");
     }
     
     void FixedUpdate()
     {
         handleRotation();
-        
+        handleMovingAnimation();
         characterController.Move(currentMovement * currentMovementSpeed * Time.deltaTime);
     }
     
@@ -49,16 +57,35 @@ public class GeneralMovement : MonoBehaviour
         positionToLookAt.y = 0.0f;
         positionToLookAt.z = currentMovement.z;
 
-        Quaternion currentRotation = transform.rotation;
+        Quaternion currentRotation = modelObject.rotation;
 
         if (isMovementPressed)
         {
             Quaternion targetRotarion = Quaternion.LookRotation(positionToLookAt);
-            transform.rotation = Quaternion.Slerp(currentRotation, targetRotarion, rotationFactorPerFrame);
+            modelObject.rotation = Quaternion.Slerp(currentRotation, targetRotarion, rotationFactorPerFrame);
         }
     }
     
     public void rotateTo(Vector3 positionToLookAt) {
         transform.LookAt(positionToLookAt);
+    }
+    
+    void handleMovingAnimation()
+    {
+        bool isAnimationWalking = animator.GetBool(isWalkingHash);
+
+        if (isMovementPressed && !isAnimationWalking)
+        {
+            animator.SetBool(isWalkingHash, true);
+            // suspicios behaivor
+            //Debug.Log("Walking");
+        }
+
+        else if (!isMovementPressed && isAnimationWalking)
+        {
+            animator.SetBool(isWalkingHash, false);
+            // suspicios behaivor
+            //Debug.Log("Idle");
+        }
     }
 }

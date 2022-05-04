@@ -10,9 +10,14 @@ public class HealthIndicator : MonoBehaviour
     private Slider healthBar;
     
     [SerializeField]
+    private Slider animatedHealthBar;
+    
+    [SerializeField]
     private TextMeshPro healthPoints;
     
     private Stats stats;
+    private float lerpTimer;
+    private float chipSpeed = 2f;
     
     private void Awake() {
         stats = GetComponentInParent<Stats>();
@@ -26,15 +31,25 @@ public class HealthIndicator : MonoBehaviour
     private void Start() {
         healthBar.maxValue = stats.maxHealth;
         healthBar.value = stats.maxHealth;
+        
+        animatedHealthBar.maxValue = stats.maxHealth;
+        animatedHealthBar.value = stats.maxHealth;
+        
+        healthPoints.text = stats.maxHealth.ToString();
     }
     
     void Update()
     {
-        
+        lerpTimer += Time.deltaTime;
+        float percentageComplete = lerpTimer / chipSpeed;
+        percentageComplete *= percentageComplete;
+        animatedHealthBar.value = Mathf.Lerp(animatedHealthBar.value, healthBar.value, percentageComplete);
     }
     
     private void OnHealthChanged(int currentHealth) {
         healthBar.value = currentHealth;
         healthPoints.text = currentHealth.ToString();
+        
+        lerpTimer = 0f;
     }
 }

@@ -26,8 +26,8 @@ public class RandomMovement : MonoBehaviour
     
     private void Awake() {
         movement = GetComponent<GeneralMovement>();
+        stats = GetComponentInParent<Stats>();
         chasing = GetComponent<Chasing>();
-        stats = GetComponent<Stats>();
     }
 
     void Start()

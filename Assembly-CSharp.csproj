@@ -36,79 +36,79 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/FirstPersonCamera.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Wander2Unit.cs" />
-     <Compile Include="Assets/Components/Scripts/AnimationManager.cs" />
-     <Compile Include="Assets/Components/Scripts/Chasing.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/CollisionAvoidance.cs" />
-     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" />
-     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/ArriveUnit.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/OffsetPursuitUnit.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/CameraMovement.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/FlockingUnit.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Wander2.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/FollowPathUnit.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/MovementAIRigidbody.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/WallAvoidanceUnit.cs" />
-     <Compile Include="Assets/Components/Enemies/Health Bar/HealthIndicator.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/GoDirectionUnit.cs" />
-     <Compile Include="Assets/Scenes/Joystick Pack/Examples/JoystickPlayerExample.cs" />
-     <Compile Include="Assets/Components/Scripts/RandomMovement.cs" />
-     <Compile Include="Assets/Components/Enemies/Health Bar/Billboard.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/WanderAvoidUnit.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/SeekUnit.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/ScreenBoundary2D.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/FollowPath.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/ThirdPersonCamera.cs" />
-     <Compile Include="Assets/Scenes/FXIFIED/common/Scripts/PlayerController.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs" />
      <Compile Include="Assets/Components/Scripts/Aggro.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/FirstPersonCamera.cs" />
      <Compile Include="Assets/Components/Scripts/Stats.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/FleeUnit.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Flee.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Base/Joystick.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Wander1Unit.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/InterposeUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Wander2Unit.cs" />
+     <Compile Include="Assets/Components/Enemies/FloatingText/FloatingText.cs" />
+     <Compile Include="Assets/Components/Scripts/AnimationManager.cs" />
+     <Compile Include="Assets/Components/Scripts/Chasing.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/CollisionAvoidance.cs" />
+     <Compile Include="Assets/Scenes/FXIFIED/common/Scripts/PowerUp.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/MovementAIRigidbody.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/WallAvoidanceUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Evade.cs" />
+     <Compile Include="Assets/Components/Scripts/Combat.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/EvadeUnit.cs" />
+     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Pursue.cs" />
+     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs" />
+     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/OffsetPursuit.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/ThirdPersonUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/ArriveUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/OffsetPursuitUnit.cs" />
+     <Compile Include="Assets/Components/Enemies/Health Bar/HealthIndicator.cs" />
      <Compile Include="Assets/Components/Scripts/CameraController.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/ScreenBoundary3D.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Hide.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/HideUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/GoDirectionUnit.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/LinePath.cs" />
+     <Compile Include="Assets/Scenes/Joystick Pack/Examples/JoystickPlayerExample.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/NearSensor.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_New.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/InfiniteGrid.cs" />
      <Compile Include="Assets/Scenes/FXIFIED/common/Scripts/Quit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Separation.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Spawner.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/VelocityMatch.cs" />
+     <Compile Include="Assets/Components/Scripts/RandomMovement.cs" />
+     <Compile Include="Assets/Components/Enemies/Health Bar/Billboard.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/CameraMovement.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/FlockingUnit.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/ColAvoidUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/WanderAvoidUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/SeekUnit.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Examples/JoystickSetterExample.cs" />
      <Compile Include="Assets/Components/Scripts/GeneralMovement.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Cohesion.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/PursueUnit.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/ScreenBoundary2D.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/FollowPath.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/WallAvoidance.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/ThirdPersonCamera.cs" />
+     <Compile Include="Assets/Scenes/FXIFIED/common/Scripts/PlayerController.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Wander2.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/SteeringBasics.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDirectionTranslate.cs" />
      <Compile Include="Assets/Components/Scripts/Movement.cs" />
+     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/FollowPathUnit.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Wander1.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Wander1Unit.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/InterposeUnit.cs" />
-     <Compile Include="Assets/Components/Enemies/FloatingText/FloatingText.cs" />
-     <Compile Include="Assets/Scenes/FXIFIED/common/Scripts/PowerUp.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Evade.cs" />
-     <Compile Include="Assets/Components/Scripts/Combat.cs" />
-     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/EvadeUnit.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Pursue.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/ScreenBoundary3D.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Hide.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_New.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Separation.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/VelocityMatch.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/ColAvoidUnit.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/PursueUnit.cs" />
-     <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/SteeringBasics.cs" />
      <None Include="Assets/Scenes/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/SG2_Template_URP.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Triplanar Sampling.txt" />
@@ -475,18 +475,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -860,86 +848,49 @@
     <Reference Include="mscorlib">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
+    <Reference Include="Unity.2D.Tilemap.Extras">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityStub">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Analytics">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityCore">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Codeless">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing.Stores">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
+    <Reference Include="Unity.Timeline">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Monetization">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
       <Project>{e513920d-db44-5253-55ea-6b58d27024b4}</Project>
       <Name>Unity.2D.Tilemap.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
+      <Project>{2dd92b61-f204-bc3c-8246-97d1154753c6}</Project>
+      <Name>Tayx.Graphy.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
+      <Project>{bfeee540-fa45-c94e-7103-d24990e82a86}</Project>
+      <Name>ToonyColorsPro.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
       <Project>{4570a7a7-af7e-527b-a60d-828587b6e46c}</Project>
@@ -948,6 +899,10 @@
     <ProjectReference Include="KinoBloom.Runtime.csproj">
       <Project>{8486700b-1e96-a3d8-de0a-cfd9ad9a0bd0}</Project>
       <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.csproj">
+      <Project>{dc08b039-67d1-432a-df29-aaaeaade01d8}</Project>
+      <Name>Tayx.Graphy</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
       <Project>{dc4e5912-6139-8fc3-cbb8-6e64218a7fb4}</Project>
@@ -960,18 +915,6 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{89962adc-fab8-30e4-6cd5-1bafc6300e7b}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
-      <Project>{2dd92b61-f204-bc3c-8246-97d1154753c6}</Project>
-      <Name>Tayx.Graphy.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
-      <Project>{bfeee540-fa45-c94e-7103-d24990e82a86}</Project>
-      <Name>ToonyColorsPro.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.csproj">
-      <Project>{dc08b039-67d1-432a-df29-aaaeaade01d8}</Project>
-      <Name>Tayx.Graphy</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Editor.csproj">
       <Project>{312986c4-f472-26d8-3114-3c0a31d0cb80}</Project>

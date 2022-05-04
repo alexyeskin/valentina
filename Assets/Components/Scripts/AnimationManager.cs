@@ -5,29 +5,17 @@ using UnityEngine;
 public class AnimationManager : MonoBehaviour
 {
     Animator animator;
-    int isWalkingHash;
-    
     GeneralMovement movement;
     
     [Header("Floating Text")]
     public GameObject floatingTextPrefub;
-    public float textYOffset = 3;
     
     [Header("Death Effect")]
     public GameObject deathEffectPrefub;
     
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-        movement = GetComponent<GeneralMovement>();
-        isWalkingHash = Animator.StringToHash("isWalking");
-    }
-    
-    void Update()
-    {
-        if (movement != null) {
-            handleMovingAnimation();
-        }
+    private void Awake() {
+        animator = GetComponentInParent<Animator>();
+        movement = GetComponentInChildren<GeneralMovement>();
     }
     
     public void playAttackAnimation() {
@@ -39,29 +27,15 @@ public class AnimationManager : MonoBehaviour
     }
     
     public void showFloatingDamageText(int damage) {
+        // Create class for enemy and charachter animations
+        // or compate with tags (bad solution)
+        
         if (floatingTextPrefub) {
             if (floatingTextPrefub.TryGetComponent(out FloatingText floatingText)) {
                 floatingText.text = damage.ToString();
             }
-            Vector3 position = transform.position;
-            position.y = textYOffset;
             
-            Instantiate(floatingTextPrefub, position, Quaternion.identity, transform);
-        }
-    }
-    
-    void handleMovingAnimation()
-    {
-        bool isAnimationWalking = animator.GetBool(isWalkingHash);
-
-        if (movement.isMovementPressed && !isAnimationWalking)
-        {
-            animator.SetBool(isWalkingHash, true);
-        }
-
-        else if (!movement.isMovementPressed && isAnimationWalking)
-        {
-            animator.SetBool(isWalkingHash, false);
+            Instantiate(floatingTextPrefub, transform.position, Quaternion.identity, transform);
         }
     }
 }

@@ -37,10 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/VariableJoystickEditor.cs" />
-     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
-     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/JoystickEditor.cs" />
+     <Compile Include="Assets/Packages/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -296,29 +296,8 @@
     <Reference Include="UnityEditor.iOS.Extensions">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
     <Reference Include="JMOAssets_CartoonFXFreeWelcome">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Assets/Packages/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -926,86 +905,35 @@
     <Reference Include="netstandard">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
+    <Reference Include="Unity.2D.Tilemap.Extras">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityStub">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Analytics">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityCore">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Codeless">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing.Stores">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
+    <Reference Include="Unity.Timeline">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Monetization">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -1017,6 +945,14 @@
       <Project>{e513920d-db44-5253-55ea-6b58d27024b4}</Project>
       <Name>Unity.2D.Tilemap.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
+      <Project>{2dd92b61-f204-bc3c-8246-97d1154753c6}</Project>
+      <Name>Tayx.Graphy.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
+      <Project>{bfeee540-fa45-c94e-7103-d24990e82a86}</Project>
+      <Name>ToonyColorsPro.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
       <Project>{4570a7a7-af7e-527b-a60d-828587b6e46c}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
@@ -1024,6 +960,10 @@
     <ProjectReference Include="KinoBloom.Runtime.csproj">
       <Project>{8486700b-1e96-a3d8-de0a-cfd9ad9a0bd0}</Project>
       <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Tayx.Graphy.csproj">
+      <Project>{dc08b039-67d1-432a-df29-aaaeaade01d8}</Project>
+      <Name>Tayx.Graphy</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
       <Project>{dc4e5912-6139-8fc3-cbb8-6e64218a7fb4}</Project>
@@ -1036,18 +976,6 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{89962adc-fab8-30e4-6cd5-1bafc6300e7b}</Project>
       <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.Editor.csproj">
-      <Project>{2dd92b61-f204-bc3c-8246-97d1154753c6}</Project>
-      <Name>Tayx.Graphy.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
-      <Project>{bfeee540-fa45-c94e-7103-d24990e82a86}</Project>
-      <Name>ToonyColorsPro.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Tayx.Graphy.csproj">
-      <Project>{dc08b039-67d1-432a-df29-aaaeaade01d8}</Project>
-      <Name>Tayx.Graphy</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Editor.csproj">
       <Project>{312986c4-f472-26d8-3114-3c0a31d0cb80}</Project>

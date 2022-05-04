@@ -200,8 +200,8 @@ QualitySettings:
     shadowmaskMode: 1
     skinWeights: 255
     textureQuality: 0
-    anisotropicTextures: 2
-    antiAliasing: 2
+    anisotropicTextures: 1
+    antiAliasing: 8
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 1
@@ -238,5 +238,5 @@ QualitySettings:
     WebGL: 3
     Windows Store Apps: 5
     XboxOne: 5
-    iPhone: 2
+    iPhone: 5
     tvOS: 2

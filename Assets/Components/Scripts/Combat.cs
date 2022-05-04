@@ -27,8 +27,8 @@ public class Combat : MonoBehaviour
     }
     
     private void Awake() {
-        animationManager = GetComponent<AnimationManager>();
-        movement = GetComponent<GeneralMovement>();
+        animationManager = GetComponentInChildren<AnimationManager>();
+        movement = GetComponentInChildren<GeneralMovement>();
     }
 
     void Update()
@@ -48,16 +48,16 @@ public class Combat : MonoBehaviour
     
     void attack(GameObject target) {
         // Todo Get non-target damage from stats
-        var damageAmount = Random.Range(1, 25);
+        Stats stats = gameObject.GetComponent<Stats>();
         
         // Todo Переместить всю логику с целью в саму цель, зачем тут работать с целью
-        AnimationManager animationManager = target.GetComponent<AnimationManager>();
-        animationManager.showFloatingDamageText(damageAmount);
+        AnimationManager animationManager = target.GetComponentInChildren<AnimationManager>();
+        animationManager.showFloatingDamageText(stats.damage);
         
         Stats targetStats = target.GetComponent<Stats>();
         
         // Todo Remove bool return, subscribe for event
-        var isDead = targetStats.takeDamage(damageAmount);
+        var isDead = targetStats.takeDamage(stats.damage);
         
         if (isDead) {
             targets.Remove(target);

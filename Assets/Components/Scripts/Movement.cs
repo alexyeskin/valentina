@@ -9,11 +9,10 @@ public class Movement: MonoBehaviour
 
     [SerializeField]
     Joystick joystick;
-
-    private void Start()
-    {
-        movement = GetComponent<GeneralMovement>();
-        animationManager = GetComponent<AnimationManager>();
+    
+    private void Awake() {
+        movement = GetComponentInChildren<GeneralMovement>();
+        animationManager = GetComponentInChildren<AnimationManager>();
     }
 
     void Update()

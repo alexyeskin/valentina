@@ -18,19 +18,28 @@ public class Aggro: MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Enemy")) {
-            if (other.TryGetComponent(out Chasing chasing)) {
+            Chasing chasing = other.GetComponentInChildren<Chasing>();
+            RandomMovement movement = other.GetComponentInChildren<RandomMovement>();
+            Stats stats = other.GetComponent<Stats>();
+            
+            if (chasing != null) {
                 chasing.startChasing(transform);
             }
             
-            if (other.TryGetComponent(out RandomMovement movement)) {
+            if (movement != null) {
                 movement.stopPatrol();
             }
             
-            combat.addTarget(other.gameObject);
+            if (stats.currentHealth > 0) {
+                combat.addTarget(other.gameObject);
+            } else {
+                Debug.Log("Target have't added. It's dead.");
+            }
         }
     }
     
     private void OnTriggerExit(Collider other) {
+        // Todo also subscribe for Current health event from Stats
         if (other.CompareTag("Enemy")) {
             combat.removeTarget(other.gameObject);
         }

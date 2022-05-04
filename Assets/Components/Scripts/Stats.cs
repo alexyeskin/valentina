@@ -8,14 +8,18 @@ public class Stats: MonoBehaviour
     [Header("Health")]
     public int maxHealth = 100;
     
-    private int currentHealth;
+    [Header("Damage")]
+    public int damage = 99;
+    
+    // add get and set, also add isDead bool
+    public int currentHealth;
     
     public event Action<int> HealthChanged;
     
     AnimationManager animationManager;
     
     private void Awake() {
-        animationManager = GetComponent<AnimationManager>();
+        animationManager = GetComponentInChildren<AnimationManager>();
     }
     
     void Start()
@@ -63,14 +67,11 @@ public class Stats: MonoBehaviour
         
         foreach (Transform child in transform)
         {
-            if (child.gameObject.name != "DeathEffect") {
+            if (child.gameObject.name != "Animations") {
                 Destroy(child.gameObject);
             }
         }
         
-        Chasing chasing = gameObject.GetComponent<Chasing>();
-        chasing.stopChasing();
-        
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 5f);
     }
 }
