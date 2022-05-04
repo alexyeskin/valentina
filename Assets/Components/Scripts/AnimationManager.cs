@@ -9,7 +9,11 @@ public class AnimationManager : MonoBehaviour
     
     GeneralMovement movement;
     
+    [Header("Floating Text")]
     public GameObject floatingTextPrefub;
+    public float textYOffset = 3;
+    
+    [Header("Death Effect")]
     public GameObject deathEffectPrefub;
     
     void Start()
@@ -39,7 +43,10 @@ public class AnimationManager : MonoBehaviour
             if (floatingTextPrefub.TryGetComponent(out FloatingText floatingText)) {
                 floatingText.text = damage.ToString();
             }
-            Instantiate(floatingTextPrefub, transform.position, Quaternion.identity, transform);
+            Vector3 position = transform.position;
+            position.y = textYOffset;
+            
+            Instantiate(floatingTextPrefub, position, Quaternion.identity, transform);
         }
     }
     

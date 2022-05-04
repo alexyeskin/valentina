@@ -234,6 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatingTextPrefub: {fileID: 8936118674929840526, guid: 471f3aa7e70b54dcdb51fb3da16ade26, type: 3}
+  textYOffset: 3
   deathEffectPrefub: {fileID: 4397334591890123670, guid: b0159ffb3464ec5478e3f6e6ce51d561, type: 3}
 --- !u!1 &2032087984795175269
 GameObject:
