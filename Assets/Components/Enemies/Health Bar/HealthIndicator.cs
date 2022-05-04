@@ -16,11 +16,13 @@ public class HealthIndicator : MonoBehaviour
     private TextMeshPro healthPoints;
     
     private Stats stats;
+    private Animator animator;
     private float lerpTimer;
     private float chipSpeed = 2f;
     
     private void Awake() {
         stats = GetComponentInParent<Stats>();
+        animator = GetComponent<Animator>();
         stats.HealthChanged += OnHealthChanged;
     }
     
@@ -43,10 +45,18 @@ public class HealthIndicator : MonoBehaviour
         lerpTimer += Time.deltaTime;
         float percentageComplete = lerpTimer / chipSpeed;
         percentageComplete *= percentageComplete;
-        animatedHealthBar.value = Mathf.Lerp(animatedHealthBar.value, healthBar.value, percentageComplete);
+        animatedHealthBar.value = Mathf.Lerp(
+            animatedHealthBar.value,
+            healthBar.value,
+            percentageComplete
+        );
     }
     
     private void OnHealthChanged(int currentHealth) {
+        if (healthBar.value > currentHealth) {
+            animator.SetTrigger("damaged");
+        }
+        
         healthBar.value = currentHealth;
         healthPoints.text = currentHealth.ToString();
         

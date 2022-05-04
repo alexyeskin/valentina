@@ -49,11 +49,6 @@ public class Combat : MonoBehaviour
     void attack(GameObject target) {
         // Todo Get non-target damage from stats
         Stats stats = gameObject.GetComponent<Stats>();
-        
-        // Todo Переместить всю логику с целью в саму цель, зачем тут работать с целью
-        AnimationManager animationManager = target.GetComponentInChildren<AnimationManager>();
-        animationManager.showFloatingDamageText(stats.damage);
-        
         Stats targetStats = target.GetComponent<Stats>();
         
         // Todo Remove bool return, subscribe for event

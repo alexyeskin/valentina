@@ -31,6 +31,8 @@ public class Stats: MonoBehaviour
         currentHealth -= amount;
         HealthChanged.Invoke(currentHealth);
         
+        animationManager.showFloatingDamageText(amount);
+        
         if (currentHealth <= 0) {
             die();
             return true;

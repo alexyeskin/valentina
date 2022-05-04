@@ -48289,10 +48289,12 @@ struct HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989  : public MonoB
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___healthPoints_6;
 	// Stats HealthIndicator::stats
 	Stats_t16598467F7C3DC7E9204672C593066C42B2F9AEB* ___stats_7;
+	// UnityEngine.Animator HealthIndicator::animator
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___animator_8;
 	// System.Single HealthIndicator::lerpTimer
-	float ___lerpTimer_8;
+	float ___lerpTimer_9;
 	// System.Single HealthIndicator::chipSpeed
-	float ___chipSpeed_9;
+	float ___chipSpeed_10;
 };
 
 // UnityMovementAI.Hide

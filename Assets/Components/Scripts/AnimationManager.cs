@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Create this class as singleton and use it not as MonoBehaviour
+// Or move it to parent
 public class AnimationManager : MonoBehaviour
 {
     Animator animator;
@@ -14,6 +16,7 @@ public class AnimationManager : MonoBehaviour
     public GameObject deathEffectPrefub;
     
     private void Awake() {
+        // one animator in all children??????
         animator = GetComponentInParent<Animator>();
         movement = GetComponentInChildren<GeneralMovement>();
     }

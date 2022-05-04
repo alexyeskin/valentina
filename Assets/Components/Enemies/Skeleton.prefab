@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage: 99
-  currentHealth: 0
+  currentHealth: 90
 --- !u!143 &8837038259087144644
 CharacterController:
   m_ObjectHideFlags: 0
@@ -398,6 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatingTextPrefub: {fileID: 8936118674929840526, guid: 471f3aa7e70b54dcdb51fb3da16ade26, type: 3}
   deathEffectPrefub: {fileID: 4397334591890123670, guid: b0159ffb3464ec5478e3f6e6ce51d561, type: 3}
+  HealthIndicatorAnimator: {fileID: 3862806179388677908}
 --- !u!1 &3654808099788273318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,13 +1021,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 342767565349945765}
     m_Modifications:
-    - target: {fileID: 205884081163229120, guid: 575e9e07ffc244638911810a17c00621, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.875
-      objectReference: {fileID: 0}
     - target: {fileID: 2667787406543329304, guid: 575e9e07ffc244638911810a17c00621, type: 3}
       propertyPath: m_Name
       value: Health Indicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713007444318179308, guid: 575e9e07ffc244638911810a17c00621, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713007444318179308, guid: 575e9e07ffc244638911810a17c00621, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6280674618486107181, guid: 575e9e07ffc244638911810a17c00621, type: 3}
       propertyPath: m_Pivot.x
@@ -1122,6 +1127,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 575e9e07ffc244638911810a17c00621, type: 3}
+--- !u!95 &3862806179388677908 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -8645757537548171638, guid: 575e9e07ffc244638911810a17c00621, type: 3}
+  m_PrefabInstance: {fileID: 4440382736685619614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7689360732563010995 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6280674618486107181, guid: 575e9e07ffc244638911810a17c00621, type: 3}

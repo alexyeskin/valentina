@@ -8569,10 +8569,12 @@ struct HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989  : public MonoB
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___healthPoints_6;
 	// Stats HealthIndicator::stats
 	Stats_t16598467F7C3DC7E9204672C593066C42B2F9AEB* ___stats_7;
+	// UnityEngine.Animator HealthIndicator::animator
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___animator_8;
 	// System.Single HealthIndicator::lerpTimer
-	float ___lerpTimer_8;
+	float ___lerpTimer_9;
 	// System.Single HealthIndicator::chipSpeed
-	float ___chipSpeed_9;
+	float ___chipSpeed_10;
 };
 
 // UnityMovementAI.Hide
@@ -10590,9 +10592,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3250[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3251[1] = 
 {
 	static_cast<int32_t>(offsetof(Billboard_tA12667D3F13391E44C6886AF2FAFE64FA5B4D715, ___cameraToLookAt_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3252[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3252[7] = 
 {
-	static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___healthBar_4)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___animatedHealthBar_5)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___healthPoints_6)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___stats_7)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___lerpTimer_8)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___chipSpeed_9)),};
+	static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___healthBar_4)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___animatedHealthBar_5)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___healthPoints_6)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___stats_7)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___animator_8)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___lerpTimer_9)),static_cast<int32_t>(offsetof(HealthIndicator_t556E81436A37156FD44EE4041434EE7B0C665989, ___chipSpeed_10)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3253[1] = 
 {
 	static_cast<int32_t>(offsetof(Aggro_tA3E811749BA31B25CD63CA77A5A4CE7F52552513, ___combat_4)),};
