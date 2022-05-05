@@ -13271,14 +13271,14 @@ struct U3CU3Ec_tC91356F4CB32E0A0C2FFCB36B7E2C51A6CFAC05F_StaticFields
 	U3CU3Ec_tC91356F4CB32E0A0C2FFCB36B7E2C51A6CFAC05F* ___U3CU3E9_0;
 };
 
-// Combat/<attackCooldown>d__7
-struct U3CattackCooldownU3Ed__7_t6C88EF9A8BA07EF7C2B229B8F0E208E6E1418606  : public RuntimeObject
+// Combat/<attackCooldown>d__8
+struct U3CattackCooldownU3Ed__8_t9603EC421332C983BF3E2B34EFF1FB985EE3A5D9  : public RuntimeObject
 {
-	// System.Int32 Combat/<attackCooldown>d__7::<>1__state
+	// System.Int32 Combat/<attackCooldown>d__8::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Combat/<attackCooldown>d__7::<>2__current
+	// System.Object Combat/<attackCooldown>d__8::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// Combat Combat/<attackCooldown>d__7::<>4__this
+	// Combat Combat/<attackCooldown>d__8::<>4__this
 	Combat_t7B260F00823EFE61D442EDAC6CA3A6441D6E31F1* ___U3CU3E4__this_2;
 };
 
@@ -47481,8 +47481,10 @@ struct TextInputBaseField_1_tB92AF7223ADFB610C49A05AC45918DC385A4D840_StaticFiel
 // Aggro
 struct Aggro_tA3E811749BA31B25CD63CA77A5A4CE7F52552513  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// Combat Aggro::combat
-	Combat_t7B260F00823EFE61D442EDAC6CA3A6441D6E31F1* ___combat_4;
+	// Stats Aggro::characterStats
+	Stats_t16598467F7C3DC7E9204672C593066C42B2F9AEB* ___characterStats_4;
+	// Combat Aggro::characterCombat
+	Combat_t7B260F00823EFE61D442EDAC6CA3A6441D6E31F1* ___characterCombat_5;
 };
 
 // AnimationManager
@@ -47813,16 +47815,18 @@ struct CollisionAvoidance_tF582F3AA394097F4688D3BA9A28ADE74D4641652  : public Mo
 // Combat
 struct Combat_t7B260F00823EFE61D442EDAC6CA3A6441D6E31F1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// Stats Combat::stats
+	Stats_t16598467F7C3DC7E9204672C593066C42B2F9AEB* ___stats_4;
 	// AnimationManager Combat::animationManager
-	AnimationManager_tC35316621CFAC750C8D818724F267158E0981B6C* ___animationManager_4;
+	AnimationManager_tC35316621CFAC750C8D818724F267158E0981B6C* ___animationManager_5;
 	// GeneralMovement Combat::movement
-	GeneralMovement_t64C9C5E9ECE88101429C8A4E792721194AC5C98C* ___movement_5;
+	GeneralMovement_t64C9C5E9ECE88101429C8A4E792721194AC5C98C* ___movement_6;
 	// Joystick Combat::joystick
-	Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* ___joystick_6;
+	Joystick_tE3193C48A43E3F5577CBD4E9A8204BBFF2FEEB7A* ___joystick_7;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Combat::targets
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___targets_7;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___targets_8;
 	// System.Boolean Combat::canAttack
-	bool ___canAttack_8;
+	bool ___canAttack_9;
 };
 
 // UnityEngine.UIElements.DropdownField
@@ -47941,6 +47945,8 @@ struct FloatingText_t6C3BE05AE9F963D65114D2FA7374997428AAD12E  : public MonoBeha
 	float ___lifetime_5;
 	// System.String FloatingText::text
 	String_t* ___text_6;
+	// UnityEngine.Color FloatingText::textColor
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___textColor_7;
 };
 
 // UnityMovementAI.FlockingUnit
@@ -48881,8 +48887,6 @@ struct Stats_t16598467F7C3DC7E9204672C593066C42B2F9AEB  : public MonoBehaviour_t
 	int32_t ___currentHealth_6;
 	// System.Action`1<System.Int32> Stats::HealthChanged
 	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___HealthChanged_7;
-	// AnimationManager Stats::animationManager
-	AnimationManager_tC35316621CFAC750C8D818724F267158E0981B6C* ___animationManager_8;
 };
 
 // UnityMovementAI.SteeringBasics
@@ -58549,7 +58553,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3255 = { sizeof(CameraContro
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3256;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3256 = { sizeof(Chasing_t90BEC89F253168DE452305C258658199F64C283E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3257;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3257 = { sizeof(U3CattackCooldownU3Ed__7_t6C88EF9A8BA07EF7C2B229B8F0E208E6E1418606), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3257 = { sizeof(U3CattackCooldownU3Ed__8_t9603EC421332C983BF3E2B34EFF1FB985EE3A5D9), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3258;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3258 = { sizeof(Combat_t7B260F00823EFE61D442EDAC6CA3A6441D6E31F1), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3259;

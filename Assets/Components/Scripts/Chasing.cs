@@ -2,38 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chasing : MonoBehaviour
-{
+public class Chasing : MonoBehaviour {
     GeneralMovement movement;
     Transform target;
-    
+
     private bool isChasing = false;
     public float chasingMovementSpeed = 5f;
-    
+
     private void Awake() {
         movement = GetComponent<GeneralMovement>();
     }
-    
-    void Start() {}
-    
-    void FixedUpdate()
-    {
+
+    void Start() { }
+
+    void FixedUpdate() {
         if (isChasing) {
             followTarget();
         }
-        
+
     }
-    
+
     public void startChasing(Transform target) {
         this.target = target;
         isChasing = true;
         movement.currentMovementSpeed = chasingMovementSpeed;
     }
-    
+
     public void stopChasing() {
         isChasing = false;
     }
-    
+
     void followTarget() {
         float distance = Vector3.Distance(transform.position, target.position);
 

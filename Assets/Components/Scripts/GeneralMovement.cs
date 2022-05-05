@@ -2,55 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GeneralMovement : MonoBehaviour
-{
+public class GeneralMovement : MonoBehaviour {
     Animator animator;
     int isWalkingHash;
-    
+
     CharacterController characterController;
     public Transform modelObject;
-    
+
     public Vector3 currentMovement = Vector3.zero;
-    
+
     public bool isGrounded {
         get {
             return characterController.isGrounded;
         }
     }
-    
+
     public bool isMovementPressed {
         get {
             return currentMovement.x != 0 || currentMovement.z != 0;
         }
     }
-    
+
     public float rotationFactorPerFrame = 0.5f;
     public float walkMovementSpeed = 3f;
     public float currentMovementSpeed = 3f;
-    
+
     private void Awake() {
         animator = GetComponentInParent<Animator>();
         characterController = GetComponentInParent<CharacterController>();
     }
-    
+
     private void Start() {
         isWalkingHash = Animator.StringToHash("isWalking");
     }
-    
-    void FixedUpdate()
-    {
+
+    void FixedUpdate() {
         handleRotation();
         handleMovingAnimation();
         characterController.Move(currentMovement * currentMovementSpeed * Time.deltaTime);
+        //characterController.SimpleMove(currentMovement * currentMovementSpeed);
     }
-    
-    public Vector3 pointToMoveFrom(Vector3 position)
-    {
+
+    public Vector3 pointToMoveFrom(Vector3 position) {
         return position - transform.position;
     }
-    
-    public void handleRotation()
-    {
+
+    public void handleRotation() {
         Vector3 positionToLookAt;
 
         positionToLookAt.x = currentMovement.x;
@@ -59,30 +56,24 @@ public class GeneralMovement : MonoBehaviour
 
         Quaternion currentRotation = modelObject.rotation;
 
-        if (isMovementPressed)
-        {
+        if (isMovementPressed) {
             Quaternion targetRotarion = Quaternion.LookRotation(positionToLookAt);
             modelObject.rotation = Quaternion.Slerp(currentRotation, targetRotarion, rotationFactorPerFrame);
         }
     }
-    
+
     public void rotateTo(Vector3 positionToLookAt) {
         transform.LookAt(positionToLookAt);
     }
-    
-    void handleMovingAnimation()
-    {
+
+    void handleMovingAnimation() {
         bool isAnimationWalking = animator.GetBool(isWalkingHash);
 
-        if (isMovementPressed && !isAnimationWalking)
-        {
+        if (isMovementPressed && !isAnimationWalking) {
             animator.SetBool(isWalkingHash, true);
             // suspicios behaivor
             //Debug.Log("Walking");
-        }
-
-        else if (!isMovementPressed && isAnimationWalking)
-        {
+        } else if (!isMovementPressed && isAnimationWalking) {
             animator.SetBool(isWalkingHash, false);
             // suspicios behaivor
             //Debug.Log("Idle");

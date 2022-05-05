@@ -50,138 +50,138 @@ extern void Aggro_OnTriggerExit_m9B671C9B2EED3086A7B2DFD70AD417D83E864F79 (void)
 extern void Aggro__ctor_m41F84E1EAF8C39E2E6647DDD3081A7B385BC4D2C (void);
 // 0x00000013 System.Void AnimationManager::Awake()
 extern void AnimationManager_Awake_m3633896196B6FE4AE5C644736A2406133AF6EC74 (void);
-// 0x00000014 System.Void AnimationManager::playAttackAnimation()
+// 0x00000014 System.Void AnimationManager::Start()
+extern void AnimationManager_Start_mFC1F0DE53C81C57EDEC14154E3418CFE24E416A4 (void);
+// 0x00000015 System.Void AnimationManager::playAttackAnimation()
 extern void AnimationManager_playAttackAnimation_mF720C1245613637797750FE6E8DC7C31AEF65ADE (void);
-// 0x00000015 System.Void AnimationManager::playDeathEffect()
+// 0x00000016 System.Void AnimationManager::playDeathEffect()
 extern void AnimationManager_playDeathEffect_mAF1EF97E83F4DF73C9A7A0CF7B4C0890C05A3996 (void);
-// 0x00000016 System.Void AnimationManager::showFloatingDamageText(System.Int32)
+// 0x00000017 System.Void AnimationManager::showFloatingDamageText(System.Int32)
 extern void AnimationManager_showFloatingDamageText_m59C472F3CEF24A402E60A93DE1B37009EA801B81 (void);
-// 0x00000017 System.Void AnimationManager::.ctor()
+// 0x00000018 System.Void AnimationManager::.ctor()
 extern void AnimationManager__ctor_mBF675E176CC106816A52650C8335DA187AFDF1C5 (void);
-// 0x00000018 System.Void CameraController::Start()
+// 0x00000019 System.Void CameraController::Start()
 extern void CameraController_Start_m8EAAC188934ECCBD009EC00751280DCFF4D96C71 (void);
-// 0x00000019 System.Void CameraController::Update()
+// 0x0000001A System.Void CameraController::Update()
 extern void CameraController_Update_mBCB871B23DBA60444D43AB56D780478BA3D355E6 (void);
-// 0x0000001A System.Void CameraController::.ctor()
+// 0x0000001B System.Void CameraController::.ctor()
 extern void CameraController__ctor_mE196A6332BDDED632D6F9DB6260E424594598950 (void);
-// 0x0000001B System.Void Chasing::Awake()
+// 0x0000001C System.Void Chasing::Awake()
 extern void Chasing_Awake_m313069B758BACBCAA190605EC98F2FD5B7BB2A6D (void);
-// 0x0000001C System.Void Chasing::Start()
+// 0x0000001D System.Void Chasing::Start()
 extern void Chasing_Start_mF2CEE6E4A012739EA46FEC4D91A6A3DA7F3F1DC1 (void);
-// 0x0000001D System.Void Chasing::FixedUpdate()
+// 0x0000001E System.Void Chasing::FixedUpdate()
 extern void Chasing_FixedUpdate_mB7E9322BAB1F9C44BC3D9186F47EE86E676F3440 (void);
-// 0x0000001E System.Void Chasing::startChasing(UnityEngine.Transform)
+// 0x0000001F System.Void Chasing::startChasing(UnityEngine.Transform)
 extern void Chasing_startChasing_m3A5C7E4CF6B2C9D05B31E507DA2507C342E203BC (void);
-// 0x0000001F System.Void Chasing::stopChasing()
+// 0x00000020 System.Void Chasing::stopChasing()
 extern void Chasing_stopChasing_mB5DA688779A25ECBC5072BA6720ECB5FE2B810E3 (void);
-// 0x00000020 System.Void Chasing::followTarget()
+// 0x00000021 System.Void Chasing::followTarget()
 extern void Chasing_followTarget_m99CF647849AAB72D2499A526FA8A8CDD31224A6F (void);
-// 0x00000021 System.Void Chasing::.ctor()
+// 0x00000022 System.Void Chasing::.ctor()
 extern void Chasing__ctor_mE04548250FB177D31D4B25A0E442BAAE34FD6984 (void);
-// 0x00000022 System.Boolean Combat::get_attackHaveTapped()
+// 0x00000023 System.Boolean Combat::get_attackHaveTapped()
 extern void Combat_get_attackHaveTapped_m7BEE36864BFBE55A121BA32A58BB3813EC18734C (void);
-// 0x00000023 System.Collections.IEnumerator Combat::attackCooldown()
+// 0x00000024 System.Collections.IEnumerator Combat::attackCooldown()
 extern void Combat_attackCooldown_mC392C4E2B0037AC04A2498927445370A0811D86E (void);
-// 0x00000024 System.Void Combat::Awake()
+// 0x00000025 System.Void Combat::Awake()
 extern void Combat_Awake_m093730496A29797A2B6CC8404412627A72EE956E (void);
-// 0x00000025 System.Void Combat::Update()
+// 0x00000026 System.Void Combat::Update()
 extern void Combat_Update_m3D8E4DBF98FBF55D96E4772F40302EE2DC2D9766 (void);
-// 0x00000026 System.Void Combat::attack(UnityEngine.GameObject)
+// 0x00000027 System.Void Combat::attack(UnityEngine.GameObject)
 extern void Combat_attack_mA5C62C036C27713927A85142BA502A1B43D9B8C2 (void);
-// 0x00000027 UnityEngine.GameObject Combat::findTheClosiestTarget()
+// 0x00000028 UnityEngine.GameObject Combat::findTheClosiestTarget()
 extern void Combat_findTheClosiestTarget_m3403EB28B4899AE8EF88213A17EE7CBB4BAE3EF5 (void);
-// 0x00000028 System.Void Combat::addTarget(UnityEngine.GameObject)
+// 0x00000029 System.Void Combat::addTarget(UnityEngine.GameObject)
 extern void Combat_addTarget_m2B8AE6EFE015CB8CA822CA09B9D62FC212224878 (void);
-// 0x00000029 System.Void Combat::removeTarget(UnityEngine.GameObject)
+// 0x0000002A System.Void Combat::removeTarget(UnityEngine.GameObject)
 extern void Combat_removeTarget_mAD8AFA70CC2BE7263CEC584C51DDC36DF5552287 (void);
-// 0x0000002A System.Void Combat::.ctor()
+// 0x0000002B System.Void Combat::.ctor()
 extern void Combat__ctor_mE6E833C9B63ADF69F2016580BE2F27B52DB4A615 (void);
-// 0x0000002B System.Void Combat/<attackCooldown>d__7::.ctor(System.Int32)
-extern void U3CattackCooldownU3Ed__7__ctor_m13C100E99666F0D2AEF47E3DA74278C6FBDB15CC (void);
-// 0x0000002C System.Void Combat/<attackCooldown>d__7::System.IDisposable.Dispose()
-extern void U3CattackCooldownU3Ed__7_System_IDisposable_Dispose_m4A3781D4BFF2EDF7E342746E7AE00D12B5C8765E (void);
-// 0x0000002D System.Boolean Combat/<attackCooldown>d__7::MoveNext()
-extern void U3CattackCooldownU3Ed__7_MoveNext_mC5B82D6EA4003F6D965D657A439BCFED6F64272D (void);
-// 0x0000002E System.Object Combat/<attackCooldown>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CattackCooldownU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0F3226F510FDF3436E9C10AFD93C4A511E268988 (void);
-// 0x0000002F System.Void Combat/<attackCooldown>d__7::System.Collections.IEnumerator.Reset()
-extern void U3CattackCooldownU3Ed__7_System_Collections_IEnumerator_Reset_m4508495C52B8336B74B6789E836F0F7393D4C6A0 (void);
-// 0x00000030 System.Object Combat/<attackCooldown>d__7::System.Collections.IEnumerator.get_Current()
-extern void U3CattackCooldownU3Ed__7_System_Collections_IEnumerator_get_Current_m7F49236D10B790B5A12AF427C7D954B66D269157 (void);
-// 0x00000031 System.Boolean GeneralMovement::get_isGrounded()
+// 0x0000002C System.Void Combat/<attackCooldown>d__8::.ctor(System.Int32)
+extern void U3CattackCooldownU3Ed__8__ctor_mF068ADF2500B3CAF8F040324058D5BBB5D40D186 (void);
+// 0x0000002D System.Void Combat/<attackCooldown>d__8::System.IDisposable.Dispose()
+extern void U3CattackCooldownU3Ed__8_System_IDisposable_Dispose_mE7CE672724C9DE755A5A0B8AEEEB89EAE4D5751A (void);
+// 0x0000002E System.Boolean Combat/<attackCooldown>d__8::MoveNext()
+extern void U3CattackCooldownU3Ed__8_MoveNext_mDF42FD3D28C64DA289DD9195B551BDC90FDADEA0 (void);
+// 0x0000002F System.Object Combat/<attackCooldown>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CattackCooldownU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m53A917225BE9E3D780FE3E6F48BC314611851AC5 (void);
+// 0x00000030 System.Void Combat/<attackCooldown>d__8::System.Collections.IEnumerator.Reset()
+extern void U3CattackCooldownU3Ed__8_System_Collections_IEnumerator_Reset_m3B5273E1E88C262589933ECA366B7EEFEACF96D9 (void);
+// 0x00000031 System.Object Combat/<attackCooldown>d__8::System.Collections.IEnumerator.get_Current()
+extern void U3CattackCooldownU3Ed__8_System_Collections_IEnumerator_get_Current_mFD0E40DD1B5B81C0B708C1FBBBA9ED5983E6C0AD (void);
+// 0x00000032 System.Boolean GeneralMovement::get_isGrounded()
 extern void GeneralMovement_get_isGrounded_mBB0190C1927ABF4C94178A37B25D55AA513439FD (void);
-// 0x00000032 System.Boolean GeneralMovement::get_isMovementPressed()
+// 0x00000033 System.Boolean GeneralMovement::get_isMovementPressed()
 extern void GeneralMovement_get_isMovementPressed_mFFB4D90E463B3982582744A6EBA4ACCF66F81785 (void);
-// 0x00000033 System.Void GeneralMovement::Awake()
+// 0x00000034 System.Void GeneralMovement::Awake()
 extern void GeneralMovement_Awake_mEF2DF7A1AE0875120C28903E26C6CC6539C813CC (void);
-// 0x00000034 System.Void GeneralMovement::Start()
+// 0x00000035 System.Void GeneralMovement::Start()
 extern void GeneralMovement_Start_mDC9384FEDCDAC2BB215DA2B6D293609C8415343F (void);
-// 0x00000035 System.Void GeneralMovement::FixedUpdate()
+// 0x00000036 System.Void GeneralMovement::FixedUpdate()
 extern void GeneralMovement_FixedUpdate_mC3CCCD6CF1A7C44F4F58F38D3C8EAF36C76934A6 (void);
-// 0x00000036 UnityEngine.Vector3 GeneralMovement::pointToMoveFrom(UnityEngine.Vector3)
+// 0x00000037 UnityEngine.Vector3 GeneralMovement::pointToMoveFrom(UnityEngine.Vector3)
 extern void GeneralMovement_pointToMoveFrom_m107DFC121D107C1BFBFC6A011735EEAF67FB5B8D (void);
-// 0x00000037 System.Void GeneralMovement::handleRotation()
+// 0x00000038 System.Void GeneralMovement::handleRotation()
 extern void GeneralMovement_handleRotation_mF5A53FE4ED473EC63BD911D097958EBEDB6C706B (void);
-// 0x00000038 System.Void GeneralMovement::rotateTo(UnityEngine.Vector3)
+// 0x00000039 System.Void GeneralMovement::rotateTo(UnityEngine.Vector3)
 extern void GeneralMovement_rotateTo_mC2596486296EB7B15691BDF4B35C6A2AD40A8041 (void);
-// 0x00000039 System.Void GeneralMovement::handleMovingAnimation()
+// 0x0000003A System.Void GeneralMovement::handleMovingAnimation()
 extern void GeneralMovement_handleMovingAnimation_m47E62E02D74905D1D21D41BBD016752B5A5C6E71 (void);
-// 0x0000003A System.Void GeneralMovement::.ctor()
+// 0x0000003B System.Void GeneralMovement::.ctor()
 extern void GeneralMovement__ctor_m73A85C49CFEC7AEA234E0309D1781A71D9D42E9C (void);
-// 0x0000003B System.Void Movement::Awake()
+// 0x0000003C System.Void Movement::Awake()
 extern void Movement_Awake_mACC9CCA53B481EA603EC44E14E6E312F905F2728 (void);
-// 0x0000003C System.Void Movement::Update()
+// 0x0000003D System.Void Movement::Update()
 extern void Movement_Update_m4B99F519DF0A29B476F90FE4314A770CD53EC418 (void);
-// 0x0000003D System.Boolean Movement::handleKeyboardPressing()
+// 0x0000003E System.Boolean Movement::handleKeyboardPressing()
 extern void Movement_handleKeyboardPressing_m4039F3B30D2027D17506B5D419C745F71697F755 (void);
-// 0x0000003E System.Void Movement::handleJoystickDragging()
+// 0x0000003F System.Void Movement::handleJoystickDragging()
 extern void Movement_handleJoystickDragging_m932B7BA823D1E9B8612E86B36AFAC8EBE1358405 (void);
-// 0x0000003F System.Void Movement::handleGravity()
+// 0x00000040 System.Void Movement::handleGravity()
 extern void Movement_handleGravity_mCAAB81D02FEDF24E78B5ED3AA4DE5A7E9D18F9E7 (void);
-// 0x00000040 System.Void Movement::.ctor()
+// 0x00000041 System.Void Movement::.ctor()
 extern void Movement__ctor_mCB72C1AD57256D73959D74FB86C5D0AA69EAE7ED (void);
-// 0x00000041 System.Collections.IEnumerator RandomMovement::waiter()
+// 0x00000042 System.Collections.IEnumerator RandomMovement::waiter()
 extern void RandomMovement_waiter_m4652195CC9B1D69D6162AEC74C67ABEB956978E5 (void);
-// 0x00000042 System.Void RandomMovement::Awake()
+// 0x00000043 System.Void RandomMovement::Awake()
 extern void RandomMovement_Awake_mD5721F2BD8AAE2D0CAEFD4B3ED0BA43C67B780F6 (void);
-// 0x00000043 System.Void RandomMovement::Start()
+// 0x00000044 System.Void RandomMovement::Start()
 extern void RandomMovement_Start_mB9CBAF509001C2FE10575A9DA4569104FA1316AF (void);
-// 0x00000044 System.Void RandomMovement::OnDrawGizmosSelected()
+// 0x00000045 System.Void RandomMovement::OnDrawGizmosSelected()
 extern void RandomMovement_OnDrawGizmosSelected_mBF995E9420616D8B5D196162B0CABDFA7BE9B41C (void);
-// 0x00000045 System.Void RandomMovement::FixedUpdate()
+// 0x00000046 System.Void RandomMovement::FixedUpdate()
 extern void RandomMovement_FixedUpdate_m8C38C7C04A495FA1D43C594057ACDAE09D99D31A (void);
-// 0x00000046 System.Void RandomMovement::patrol()
+// 0x00000047 System.Void RandomMovement::patrol()
 extern void RandomMovement_patrol_m825DC8A8CD42C9FD3611F65F8EA635E851EAB972 (void);
-// 0x00000047 System.Void RandomMovement::handleReturning()
+// 0x00000048 System.Void RandomMovement::handleReturning()
 extern void RandomMovement_handleReturning_mD4897D4E659FCCD3A4A70F9129A1BD4AC46641BC (void);
-// 0x00000048 System.Void RandomMovement::returnToSpawn()
+// 0x00000049 System.Void RandomMovement::returnToSpawn()
 extern void RandomMovement_returnToSpawn_m25F2593EA575D4BDA0EFA94ABBD74292DF3BB875 (void);
-// 0x00000049 System.Void RandomMovement::startPatrol()
+// 0x0000004A System.Void RandomMovement::startPatrol()
 extern void RandomMovement_startPatrol_m0C77FDBB8945F3989DDF871ADDB17D21DCA6DACD (void);
-// 0x0000004A System.Void RandomMovement::stopPatrol()
+// 0x0000004B System.Void RandomMovement::stopPatrol()
 extern void RandomMovement_stopPatrol_m5689E8DF765EF66FF6C6E78A5F6FC1109F76C93C (void);
-// 0x0000004B UnityEngine.Vector3 RandomMovement::randomPointInsideCircle()
+// 0x0000004C UnityEngine.Vector3 RandomMovement::randomPointInsideCircle()
 extern void RandomMovement_randomPointInsideCircle_m204E20C19031E028DC655E25AE0CC5F0D702F037 (void);
-// 0x0000004C System.Void RandomMovement::.ctor()
+// 0x0000004D System.Void RandomMovement::.ctor()
 extern void RandomMovement__ctor_mD1D0994096BB93BFB050CDE517CEE7A90C22F7F2 (void);
-// 0x0000004D System.Void RandomMovement/<waiter>d__8::.ctor(System.Int32)
+// 0x0000004E System.Void RandomMovement/<waiter>d__8::.ctor(System.Int32)
 extern void U3CwaiterU3Ed__8__ctor_m233A8786CE6DFF92C28F60ADD1A733ECAE128B9E (void);
-// 0x0000004E System.Void RandomMovement/<waiter>d__8::System.IDisposable.Dispose()
+// 0x0000004F System.Void RandomMovement/<waiter>d__8::System.IDisposable.Dispose()
 extern void U3CwaiterU3Ed__8_System_IDisposable_Dispose_m3A2C6739E9D79564446111B1BA4DF5263525FFBF (void);
-// 0x0000004F System.Boolean RandomMovement/<waiter>d__8::MoveNext()
+// 0x00000050 System.Boolean RandomMovement/<waiter>d__8::MoveNext()
 extern void U3CwaiterU3Ed__8_MoveNext_mA320FD5BB2F1E13E2E72F74EF61D2DD7FE2CC191 (void);
-// 0x00000050 System.Object RandomMovement/<waiter>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000051 System.Object RandomMovement/<waiter>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CwaiterU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEF569D387F33B7620B89B62983233EFAA937A7DF (void);
-// 0x00000051 System.Void RandomMovement/<waiter>d__8::System.Collections.IEnumerator.Reset()
+// 0x00000052 System.Void RandomMovement/<waiter>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CwaiterU3Ed__8_System_Collections_IEnumerator_Reset_m33C70CF691E1F3F3FCB1C2EF36DBED75C157C496 (void);
-// 0x00000052 System.Object RandomMovement/<waiter>d__8::System.Collections.IEnumerator.get_Current()
+// 0x00000053 System.Object RandomMovement/<waiter>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CwaiterU3Ed__8_System_Collections_IEnumerator_get_Current_m07CCE438E65D3ADEDAC793CB53138D225FB8FC2B (void);
-// 0x00000053 System.Void Stats::add_HealthChanged(System.Action`1<System.Int32>)
+// 0x00000054 System.Void Stats::add_HealthChanged(System.Action`1<System.Int32>)
 extern void Stats_add_HealthChanged_m3414E72CA92E32B09ABBC11499F5D6F31645CC9A (void);
-// 0x00000054 System.Void Stats::remove_HealthChanged(System.Action`1<System.Int32>)
+// 0x00000055 System.Void Stats::remove_HealthChanged(System.Action`1<System.Int32>)
 extern void Stats_remove_HealthChanged_mE5323721F253D069C4C83ED2DCA0DF83917DB04C (void);
-// 0x00000055 System.Void Stats::Awake()
-extern void Stats_Awake_mB899012F0F13688C4D8A2538D275C756FB610BF4 (void);
 // 0x00000056 System.Void Stats::Start()
 extern void Stats_Start_m47B96EE1847C6159F0B66A5ACCC36ACC2FB91545 (void);
 // 0x00000057 System.Boolean Stats::takeDamage(System.Int32)
@@ -885,6 +885,7 @@ static Il2CppMethodPointer s_methodPointers[426] =
 	Aggro_OnTriggerExit_m9B671C9B2EED3086A7B2DFD70AD417D83E864F79,
 	Aggro__ctor_m41F84E1EAF8C39E2E6647DDD3081A7B385BC4D2C,
 	AnimationManager_Awake_m3633896196B6FE4AE5C644736A2406133AF6EC74,
+	AnimationManager_Start_mFC1F0DE53C81C57EDEC14154E3418CFE24E416A4,
 	AnimationManager_playAttackAnimation_mF720C1245613637797750FE6E8DC7C31AEF65ADE,
 	AnimationManager_playDeathEffect_mAF1EF97E83F4DF73C9A7A0CF7B4C0890C05A3996,
 	AnimationManager_showFloatingDamageText_m59C472F3CEF24A402E60A93DE1B37009EA801B81,
@@ -908,12 +909,12 @@ static Il2CppMethodPointer s_methodPointers[426] =
 	Combat_addTarget_m2B8AE6EFE015CB8CA822CA09B9D62FC212224878,
 	Combat_removeTarget_mAD8AFA70CC2BE7263CEC584C51DDC36DF5552287,
 	Combat__ctor_mE6E833C9B63ADF69F2016580BE2F27B52DB4A615,
-	U3CattackCooldownU3Ed__7__ctor_m13C100E99666F0D2AEF47E3DA74278C6FBDB15CC,
-	U3CattackCooldownU3Ed__7_System_IDisposable_Dispose_m4A3781D4BFF2EDF7E342746E7AE00D12B5C8765E,
-	U3CattackCooldownU3Ed__7_MoveNext_mC5B82D6EA4003F6D965D657A439BCFED6F64272D,
-	U3CattackCooldownU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0F3226F510FDF3436E9C10AFD93C4A511E268988,
-	U3CattackCooldownU3Ed__7_System_Collections_IEnumerator_Reset_m4508495C52B8336B74B6789E836F0F7393D4C6A0,
-	U3CattackCooldownU3Ed__7_System_Collections_IEnumerator_get_Current_m7F49236D10B790B5A12AF427C7D954B66D269157,
+	U3CattackCooldownU3Ed__8__ctor_mF068ADF2500B3CAF8F040324058D5BBB5D40D186,
+	U3CattackCooldownU3Ed__8_System_IDisposable_Dispose_mE7CE672724C9DE755A5A0B8AEEEB89EAE4D5751A,
+	U3CattackCooldownU3Ed__8_MoveNext_mDF42FD3D28C64DA289DD9195B551BDC90FDADEA0,
+	U3CattackCooldownU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m53A917225BE9E3D780FE3E6F48BC314611851AC5,
+	U3CattackCooldownU3Ed__8_System_Collections_IEnumerator_Reset_m3B5273E1E88C262589933ECA366B7EEFEACF96D9,
+	U3CattackCooldownU3Ed__8_System_Collections_IEnumerator_get_Current_mFD0E40DD1B5B81C0B708C1FBBBA9ED5983E6C0AD,
 	GeneralMovement_get_isGrounded_mBB0190C1927ABF4C94178A37B25D55AA513439FD,
 	GeneralMovement_get_isMovementPressed_mFFB4D90E463B3982582744A6EBA4ACCF66F81785,
 	GeneralMovement_Awake_mEF2DF7A1AE0875120C28903E26C6CC6539C813CC,
@@ -950,7 +951,6 @@ static Il2CppMethodPointer s_methodPointers[426] =
 	U3CwaiterU3Ed__8_System_Collections_IEnumerator_get_Current_m07CCE438E65D3ADEDAC793CB53138D225FB8FC2B,
 	Stats_add_HealthChanged_m3414E72CA92E32B09ABBC11499F5D6F31645CC9A,
 	Stats_remove_HealthChanged_mE5323721F253D069C4C83ED2DCA0DF83917DB04C,
-	Stats_Awake_mB899012F0F13688C4D8A2538D275C756FB610BF4,
 	Stats_Start_m47B96EE1847C6159F0B66A5ACCC36ACC2FB91545,
 	Stats_takeDamage_mA72A57D1866B25C5C098808F0730D99A1BB1740F,
 	Stats_heal_m73477170B854F1DDDF6ADAD6019A3F75C7640DBE,
@@ -1323,6 +1323,7 @@ static const int32_t s_InvokerIndices[426] =
 	3573,
 	3573,
 	3573,
+	3573,
 	2898,
 	3573,
 	3573,
@@ -1386,7 +1387,6 @@ static const int32_t s_InvokerIndices[426] =
 	3477,
 	2916,
 	2916,
-	3573,
 	3573,
 	2052,
 	2898,
