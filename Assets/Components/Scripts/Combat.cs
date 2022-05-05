@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Combat : MonoBehaviour {
-    Stats stats;
+    Stats attackerStats;
     AnimationManager animationManager;
     GeneralMovement movement;
 
@@ -30,9 +30,14 @@ public class Combat : MonoBehaviour {
     }
 
     private void Awake() {
-        stats = gameObject.GetComponent<Stats>();
+        attackerStats = gameObject.GetComponent<Stats>();
+        attackerStats.HealthChanged += OnAttackerHealthChanged;
         animationManager = GetComponent<AnimationManager>();
         movement = GetComponentInChildren<GeneralMovement>();
+    }
+    
+    private void OnDestroy() {
+        attackerStats.HealthChanged -= OnAttackerHealthChanged;
     }
 
     void Update() {
@@ -55,6 +60,7 @@ public class Combat : MonoBehaviour {
                     GameObject target = findTheClosiestTarget();
                     attack(target);
                     
+                    // play animation only if attack possible
                     StartCoroutine(attackCooldown());
                     animationManager.playAttackAnimation();
                 }
@@ -65,31 +71,27 @@ public class Combat : MonoBehaviour {
     void attack(GameObject target) {
         Stats targetStats = target.GetComponent<Stats>();
         AnimationManager targetAnimationManager = target.GetComponent<AnimationManager>();
-
-        // Get is Dead
-        // DEAL WITH COMPLEX DEATH LOGIC
-        var isDead = stats.currentHealth <= 0;
-        var isTargetDead = false;
         
-        // subscribe for current health when target is added, and unsub when is removed;
-        if (!isDead) {
-            targetAnimationManager.showFloatingDamageText(stats.damage);
-            // Todo Remove bool return, subscribe for event
-            isTargetDead = targetStats.takeDamage(stats.damage);
+        targetStats.takeDamage(attackerStats.damage);
+        targetAnimationManager.showFloatingDamageText(attackerStats.damage);
+        
+        if (targetStats.isDead) {
+            removeTarget(target);
             
-            if (isTargetDead) {
-                targetAnimationManager.playDeathEffect();
-            }
-        }
-
-        if (isDead || isTargetDead) {
-            targets.Remove(target);
-
+            targetAnimationManager.playDeathEffect();
+            
             RandomMovement movement = GetComponentInChildren<RandomMovement>();
-
-            if (movement != null) {
+            if (movement) {
                 movement.returnToSpawn();
             }
+        }
+    }
+    
+    private void OnAttackerHealthChanged(int currentHealth) {
+        if (attackerStats.isDead) {
+            removeAllTargets();
+        } else {
+            print(currentHealth);
         }
     }
 
@@ -115,5 +117,9 @@ public class Combat : MonoBehaviour {
 
     public void removeTarget(GameObject target) {
         targets.Remove(target);
+    }
+    
+    public void removeAllTargets() {
+        targets = new List<GameObject>();
     }
 }

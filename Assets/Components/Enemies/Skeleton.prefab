@@ -159,9 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8db858494f2e460dafb82b29e63bb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 111
   damage: 50
-  currentHealth: 0
 --- !u!143 &8837038259087144644
 CharacterController:
   m_ObjectHideFlags: 0

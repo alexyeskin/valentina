@@ -428,6 +428,7 @@
 -r:"Library/Bee/artifacts/900b0aEDbg.dag/UnityEngine.Advertisements.ref.dll"
 -r:"Library/Bee/artifacts/900b0aEDbg.dag/UnityEngine.Monetization.ref.dll"
 -r:"Library/Bee/artifacts/900b0aEDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/Editor/Autosave.cs"
 "Assets/Packages/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs"
 "Assets/Scenes/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs"
 "Assets/Scenes/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs"
