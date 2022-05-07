@@ -302,6 +302,7 @@
 -r:"Library/Bee/artifacts/900b0aP.dag/UnityEngine.Advertisements.ref.dll"
 -r:"Library/Bee/artifacts/900b0aP.dag/UnityEngine.Monetization.ref.dll"
 -r:"Library/Bee/artifacts/900b0aP.dag/UnityEngine.UI.ref.dll"
+"Assets/Components/Enemies/Character Health Bar/HealthRegeneration.cs"
 "Assets/Components/Enemies/FloatingText/FloatingText.cs"
 "Assets/Components/Enemies/Health Bar/Billboard.cs"
 "Assets/Components/Enemies/Health Bar/HealthIndicator.cs"

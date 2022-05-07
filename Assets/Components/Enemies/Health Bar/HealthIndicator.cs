@@ -59,5 +59,14 @@ public class HealthIndicator : MonoBehaviour {
         healthPoints.text = currentHealth.ToString();
 
         lerpTimer = 0f;
+        
+        if (gameObject.CompareTag("Character")) {
+            handleBlinking(currentHealth);
+        }
+    }
+    
+    private void handleBlinking(int currentHealth) {
+        float healthPercentage = (float)currentHealth / (float)stats.maxHealth;
+        animator.SetFloat("HealthPercentage", healthPercentage);
     }
 }

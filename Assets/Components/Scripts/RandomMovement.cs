@@ -8,7 +8,6 @@ public class RandomMovement : MonoBehaviour {
     Stats stats;
 
     public float circleMovingRadius = 5f;
-    public float rotationFactorPerFrame = 1f;
 
     Vector3 startCenterPosition;
     Vector3 randomPoint;
@@ -52,7 +51,7 @@ public class RandomMovement : MonoBehaviour {
         float distance = Vector3.Distance(transform.position, randomPoint);
 
         // Point have reached
-        if (distance < 0.05f * movement.currentMovement.magnitude) {
+        if (distance < 0.1f * movement.currentMovement.magnitude) {
             randomPoint = randomPointInsideCircle();
             StartCoroutine(waiter());
         }

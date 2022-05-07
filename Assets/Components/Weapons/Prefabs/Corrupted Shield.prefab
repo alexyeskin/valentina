@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2292923686342260711}
   - component: {fileID: 7664716429297153187}
   m_Layer: 0
-  m_Name: Darkness_05
+  m_Name: Corrupted Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

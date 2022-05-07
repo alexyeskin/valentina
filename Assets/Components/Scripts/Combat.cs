@@ -23,14 +23,8 @@ public class Combat : MonoBehaviour {
     }
     bool canAttack = true;
 
-    IEnumerator attackCooldown() {
-        canAttack = false;
-        yield return new WaitForSeconds(0.7f);
-        canAttack = true;
-    }
-
     private void Awake() {
-        attackerStats = gameObject.GetComponent<Stats>();
+        attackerStats = gameObject.GetComponentInParent<Stats>();
         attackerStats.HealthChanged += OnAttackerHealthChanged;
         animationManager = GetComponent<AnimationManager>();
         movement = GetComponentInChildren<GeneralMovement>();
@@ -43,42 +37,43 @@ public class Combat : MonoBehaviour {
     void Update() {
         if (attackHaveTapped) {
             if (canAttack) {
-                if (targets.Count != 0) {
-                    GameObject target = findTheClosiestTarget();
-                    attack(target);
-                }
-
-                // after attack start cooldown and play attack animation
-                StartCoroutine(attackCooldown());
-                animationManager.playAttackAnimation();
+                StartCoroutine(attack());
             }
         }
 
         if (gameObject.CompareTag("Enemy")) {
             if (canAttack) {
                 if (targets.Count != 0) {
-                    GameObject target = findTheClosiestTarget();
-                    attack(target);
-                    
-                    // play animation only if attack possible
-                    StartCoroutine(attackCooldown());
-                    animationManager.playAttackAnimation();
+                    StartCoroutine(attack());
                 }
             }
         }
     }
 
+    IEnumerator attack() {
+        canAttack = false;
+        // 0.83 animation duration
+        // need to speed up animation if attack cooldown less
+        float animationWaitDuration = 0.75f / 1.5f;
+        animationManager.playAttackAnimation();
+        yield return new WaitForSeconds(animationWaitDuration);
+        
+        if (targets.Count != 0) {
+            GameObject target = findTheClosiestTarget();
+            attack(target);
+        }
+        
+        yield return new WaitForSeconds(0.7f - animationWaitDuration);
+        canAttack = true;
+    }
+
     void attack(GameObject target) {
-        Stats targetStats = target.GetComponent<Stats>();
-        AnimationManager targetAnimationManager = target.GetComponent<AnimationManager>();
+        Stats targetStats = target.GetComponentInParent<Stats>();
         
         targetStats.takeDamage(attackerStats.damage);
-        targetAnimationManager.showFloatingDamageText(attackerStats.damage);
         
         if (targetStats.isDead) {
             removeTarget(target);
-            
-            targetAnimationManager.playDeathEffect();
             
             RandomMovement movement = GetComponentInChildren<RandomMovement>();
             if (movement) {
@@ -90,8 +85,6 @@ public class Combat : MonoBehaviour {
     private void OnAttackerHealthChanged(int currentHealth) {
         if (attackerStats.isDead) {
             removeAllTargets();
-        } else {
-            print(currentHealth);
         }
     }
 

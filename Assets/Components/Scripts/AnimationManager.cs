@@ -6,18 +6,20 @@ using UnityEngine;
 // Or move it to parent
 public class AnimationManager : MonoBehaviour {
     Animator animator;
-    GeneralMovement movement;
+    Stats stats;
 
-    [Header("Floating Text")]
     public GameObject floatingTextPrefub;
-
-    [Header("Death Effect")]
     public GameObject deathEffectPrefub;
+    public GameObject healEffectPrefub;
 
     private void Awake() {
-        // one animator in all children??????
         animator = GetComponent<Animator>();
-        movement = GetComponentInChildren<GeneralMovement>();
+        stats = GetComponent<Stats>();
+        stats.HealthDecreased += onHealthDecreased;
+    }
+    
+    private void OnDestroy() {
+        stats.HealthDecreased -= onHealthDecreased;
     }
 
     private void Start() {
@@ -25,19 +27,52 @@ public class AnimationManager : MonoBehaviour {
             Debug.Log("Set floatingTextPrefub");
         }
     }
+    
+    IEnumerator test() {
+        yield return new WaitForSeconds(3);
+        showFloatingDamageText(1000);
+    }
+    
+    private void onHealthDecreased(int amount) {
+        showFloatingDamageText(amount);
+        
+        if (stats.isDead) {
+            foreach (Transform child in transform) {
+                child.gameObject.SetActive(false);
+            }
+            playDeathEffect();
+            StartCoroutine(test());
+        }
+    }
 
     public void playAttackAnimation() {
+        // 0.83 animation duration
         animator.SetTrigger("attack");
     }
 
     public void playDeathEffect() {
         Instantiate(deathEffectPrefub, transform.position, Quaternion.identity, transform);
     }
+    
+    public void playHealEffect() {
+        Instantiate(healEffectPrefub, transform.position, Quaternion.identity, transform);
+    }
+    
+    IEnumerator playAnimationWithDelay() {
+        yield return new WaitForSeconds(1);
+        foreach (Transform child in transform) {
+            if (child.name == "FX Healing AOE(Clone)") {
+                Destroy(child.gameObject);
+            }
+        }
+    }
+    
+    public void stopHealEffect() {
+        StartCoroutine(playAnimationWithDelay());
+    }
 
     public void showFloatingDamageText(int damage) {
         // Create class for enemy and charachter animations
-        // or compate with tags (bad solution)
-
         if (floatingTextPrefub.TryGetComponent(out FloatingText floatingText)) {
             floatingText.text = damage.ToString();
 

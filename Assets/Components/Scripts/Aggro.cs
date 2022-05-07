@@ -7,7 +7,7 @@ public class Aggro : MonoBehaviour {
     Combat characterCombat;
 
     void Start() {
-        characterStats = GetComponent<Stats>();
+        characterStats = GetComponentInParent<Stats>();
         characterCombat = GetComponent<Combat>();
     }
 
@@ -17,7 +17,7 @@ public class Aggro : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Enemy")) {
-            Stats enemyStats = other.GetComponent<Stats>();
+            Stats enemyStats = other.GetComponentInParent<Stats>();
 
             if (enemyStats.currentHealth > 0 && characterStats.currentHealth > 0) {
                 Chasing enemyChasing = other.GetComponentInChildren<Chasing>();

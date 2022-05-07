@@ -15,22 +15,18 @@ public class Movement : MonoBehaviour {
     }
 
     void Update() {
-        handleGravity();
+        // handleGravity();
         if (!handleKeyboardPressing()) {
             handleJoystickDragging();
         }
     }
 
     bool handleKeyboardPressing() {
-        Vector2 direction = new Vector2(
-            Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical")
-        );
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        
+        movement.currentMovement = move;
 
-        movement.currentMovement.x = direction.x;
-        movement.currentMovement.z = direction.y;
-
-        if (direction.x != 0 || direction.y != 0) {
+        if (move.x != 0 || move.y != 0 || move.z != 0) {
             return true;
         } else {
             return false;
@@ -38,8 +34,8 @@ public class Movement : MonoBehaviour {
     }
 
     void handleJoystickDragging() {
-        movement.currentMovement.x = joystick.Direction.normalized.x;
-        movement.currentMovement.z = joystick.Direction.normalized.y;
+        Vector3 move = new Vector3(joystick.Direction.normalized.x, 0, joystick.Direction.normalized.y);
+        movement.currentMovement = move;
     }
 
     void handleGravity() {

@@ -3,23 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stats : MonoBehaviour {
-    [Header("Health")]
+public class Stats: MonoBehaviour {
     public int maxHealth = 100;
-
-    [Header("Damage")]
     public int damage = 10;
     
+    private int previousCurrentHealth = 0;
     private int _currentHealth;
     public int currentHealth {
         get { return _currentHealth; }
         set {
-            _currentHealth = value;
+            previousCurrentHealth = currentHealth;
+            _currentHealth = Math.Min(value, maxHealth);
+            
+            HealthChanged.Invoke(currentHealth);
 
-            HealthChanged.Invoke(value);
-
-            if (isDead) {
-                die();
+            if (previousCurrentHealth > currentHealth) {
+                if (HealthDecreased != null) {
+                    HealthDecreased.Invoke(previousCurrentHealth - currentHealth);
+                }
             }
         }
     }
@@ -29,19 +30,20 @@ public class Stats : MonoBehaviour {
     }
 
     public event Action<int> HealthChanged;
-
-    void Start() {
-        _currentHealth = maxHealth;
+    public event Action<int> HealthDecreased;
+    
+    HealthRegeneration HealthRegeneration;
+    
+    private void Awake() {
+        HealthRegeneration = GetComponent<HealthRegeneration>();
     }
 
-    public bool takeDamage(int amount) {
+    void Start() {
+        currentHealth = maxHealth;
+    }
+
+    public void takeDamage(int amount) {
         currentHealth -= amount;
-        
-        if (isDead) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
     public void heal(int amount) {
@@ -54,17 +56,5 @@ public class Stats : MonoBehaviour {
 
     public void setCurrentHealth(float amount) {
         currentHealth = (int)Math.Floor(amount);
-    }
-
-    private void die() {
-        // To fix - Called twice
-        Debug.Log("Die");
-        foreach (Transform child in transform) {
-            if (child.gameObject.name != "Animations") {
-                Destroy(child.gameObject);
-            }
-        }
-
-        Destroy(gameObject, 5f);
     }
 }

@@ -40,8 +40,8 @@
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/JoystickEditor.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
-     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs" />
      <Compile Include="Assets/Editor/Autosave.cs" />
+     <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

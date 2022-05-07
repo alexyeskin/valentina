@@ -48,6 +48,7 @@
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Wander1Unit.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/InterposeUnit.cs" />
+     <Compile Include="Assets/Components/Enemies/Character Health Bar/HealthRegeneration.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Wander2Unit.cs" />
      <Compile Include="Assets/Components/Enemies/FloatingText/FloatingText.cs" />
      <Compile Include="Assets/Components/Scripts/AnimationManager.cs" />

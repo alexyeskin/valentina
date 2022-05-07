@@ -10,6 +10,7 @@ public class GeneralMovement : MonoBehaviour {
     public Transform modelObject;
 
     public Vector3 currentMovement = Vector3.zero;
+    private Vector3 gravityVelocity;
 
     public bool isGrounded {
         get {
@@ -26,6 +27,7 @@ public class GeneralMovement : MonoBehaviour {
     public float rotationFactorPerFrame = 0.5f;
     public float walkMovementSpeed = 3f;
     public float currentMovementSpeed = 3f;
+    private float gravityValue = -9.81f;
 
     private void Awake() {
         animator = GetComponentInParent<Animator>();
@@ -36,11 +38,25 @@ public class GeneralMovement : MonoBehaviour {
         isWalkingHash = Animator.StringToHash("isWalking");
     }
 
-    void FixedUpdate() {
-        handleRotation();
+    void Update() {
+        //handleRotation();
         handleMovingAnimation();
         characterController.Move(currentMovement * currentMovementSpeed * Time.deltaTime);
-        //characterController.SimpleMove(currentMovement * currentMovementSpeed);
+        
+        if (currentMovement != Vector3.zero) {
+            modelObject.forward = currentMovement;
+        }
+        
+        handleGravity();
+    }
+    
+    void handleGravity() {
+        if (isGrounded && gravityVelocity.y < 0) {
+            gravityVelocity.y = 0f;
+        }
+        
+        gravityVelocity.y += gravityValue * Time.deltaTime;
+        characterController.Move(gravityVelocity * Time.deltaTime);
     }
 
     public Vector3 pointToMoveFrom(Vector3 position) {
