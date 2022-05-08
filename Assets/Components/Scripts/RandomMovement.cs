@@ -18,7 +18,7 @@ public class RandomMovement : MonoBehaviour {
         movement.currentMovement = Vector3.zero;
         movement.currentMovementSpeed = movement.walkMovementSpeed;
         yield return new WaitForSeconds(Random.Range(0.5f, 4f));
-        movement.currentMovement = movement.pointToMoveFrom(randomPoint);
+        movement.currentMovement = movement.pointToMoveFrom(randomPoint).normalized;
     }
 
     private void Awake() {

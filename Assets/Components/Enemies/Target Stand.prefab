@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 3326512992275839606}
   - component: {fileID: 6456562899086818718}
   - component: {fileID: 3794151604838919581}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Target Stand
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 4335693262026146883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -71, y: 0.05, z: 5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8950920500227913364}
@@ -115,13 +115,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 4
+  m_Radius: 1
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.05
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &3794151604838919581
 MonoBehaviour:
   m_ObjectHideFlags: 0

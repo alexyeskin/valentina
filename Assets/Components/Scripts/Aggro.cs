@@ -8,7 +8,7 @@ public class Aggro : MonoBehaviour {
 
     void Start() {
         characterStats = GetComponentInParent<Stats>();
-        characterCombat = GetComponent<Combat>();
+        characterCombat = GetComponentInParent<Combat>();
     }
 
     void Update() {

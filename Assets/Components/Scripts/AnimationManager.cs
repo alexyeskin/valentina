@@ -28,11 +28,6 @@ public class AnimationManager : MonoBehaviour {
         }
     }
     
-    IEnumerator test() {
-        yield return new WaitForSeconds(3);
-        showFloatingDamageText(1000);
-    }
-    
     private void onHealthDecreased(int amount) {
         showFloatingDamageText(amount);
         
@@ -41,7 +36,6 @@ public class AnimationManager : MonoBehaviour {
                 child.gameObject.SetActive(false);
             }
             playDeathEffect();
-            StartCoroutine(test());
         }
     }
 

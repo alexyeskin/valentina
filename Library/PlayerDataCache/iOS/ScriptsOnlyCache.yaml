@@ -18,7 +18,6 @@ ScriptsOnlyBuild:
     - Stats
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -997,7 +996,7 @@ ScriptsOnlyBuild:
     className: VelocityMatch
   - hash:
       serializedVersion: 2
-      Hash: 11f28ab0f498418d05af0571d1f4f4de
+      Hash: 58707418064778214a89ee0669482deb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RandomMovement

@@ -15,7 +15,7 @@ public class Chasing : MonoBehaviour {
 
     void Start() { }
 
-    void FixedUpdate() {
+    void Update() {
         if (isChasing) {
             followTarget();
         }
@@ -39,7 +39,7 @@ public class Chasing : MonoBehaviour {
         if (distance < 3.5f) {
             movement.currentMovement = Vector3.zero;
         } else {
-            movement.currentMovement = movement.pointToMoveFrom(target.position);
+            movement.currentMovement = movement.pointToMoveFrom(target.position).normalized;
         }
     }
 }
