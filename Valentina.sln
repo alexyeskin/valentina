@@ -3,29 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{89962adc-fab8-30e4-6cd5-1bafc6300e7b}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tayx.Graphy", "Tayx.Graphy.csproj", "{dc08b039-67d1-432a-df29-aaaeaade01d8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{cd128220-0cec-755a-46c3-145ff9e4ee87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tayx.Graphy", "Tayx.Graphy.csproj", "{dc08b039-67d1-432a-df29-aaaeaade01d8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro2.Demo", "ToonyColorsPro2.Demo.csproj", "{20d4b6be-067a-ac58-e631-a3f589a4e619}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinoBloom.Runtime", "KinoBloom.Runtime.csproj", "{8486700b-1e96-a3d8-de0a-cfd9ad9a0bd0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Runtime", "ToonyColorsPro.Runtime.csproj", "{bfeee540-fa45-c94e-7103-d24990e82a86}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.InventorySystem", "DevionGames.InventorySystem.csproj", "{24fffc0e-e576-7cf3-0418-e7e110ba64c5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.ThirdPersonController", "DevionGames.ThirdPersonController.csproj", "{2c69241d-ff52-e735-5c63-2780de39e571}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.Utilities", "DevionGames.Utilities.csproj", "{55752fb3-a3f2-3a3d-6ec6-9ab1db9bf264}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.Graphs", "DevionGames.Graphs.csproj", "{2c3d4fdb-f108-c2aa-9daf-054e80c19a1b}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.Triggers", "DevionGames.Triggers.csproj", "{ea9a895a-29c8-676b-3bc6-5055757ce834}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.UIWidgets", "DevionGames.UIWidgets.csproj", "{c46af064-2f1d-2e2f-8bcd-5ee6118ff20c}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevionGames.StatSystem", "DevionGames.StatSystem.csproj", "{0cf475db-201f-2c81-b054-1141b801624d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.UI", "UnityEditor.UI.csproj", "{7d6cb4c0-1e3f-709d-328d-a58d4ed32744}"
 EndProject
@@ -48,30 +34,16 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{89962adc-fab8-30e4-6cd5-1bafc6300e7b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89962adc-fab8-30e4-6cd5-1bafc6300e7b}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{dc08b039-67d1-432a-df29-aaaeaade01d8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{dc08b039-67d1-432a-df29-aaaeaade01d8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{cd128220-0cec-755a-46c3-145ff9e4ee87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{cd128220-0cec-755a-46c3-145ff9e4ee87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{dc08b039-67d1-432a-df29-aaaeaade01d8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{dc08b039-67d1-432a-df29-aaaeaade01d8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20d4b6be-067a-ac58-e631-a3f589a4e619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20d4b6be-067a-ac58-e631-a3f589a4e619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8486700b-1e96-a3d8-de0a-cfd9ad9a0bd0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8486700b-1e96-a3d8-de0a-cfd9ad9a0bd0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{bfeee540-fa45-c94e-7103-d24990e82a86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{bfeee540-fa45-c94e-7103-d24990e82a86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24fffc0e-e576-7cf3-0418-e7e110ba64c5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24fffc0e-e576-7cf3-0418-e7e110ba64c5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2c69241d-ff52-e735-5c63-2780de39e571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2c69241d-ff52-e735-5c63-2780de39e571}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55752fb3-a3f2-3a3d-6ec6-9ab1db9bf264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55752fb3-a3f2-3a3d-6ec6-9ab1db9bf264}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2c3d4fdb-f108-c2aa-9daf-054e80c19a1b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2c3d4fdb-f108-c2aa-9daf-054e80c19a1b}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ea9a895a-29c8-676b-3bc6-5055757ce834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ea9a895a-29c8-676b-3bc6-5055757ce834}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{c46af064-2f1d-2e2f-8bcd-5ee6118ff20c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{c46af064-2f1d-2e2f-8bcd-5ee6118ff20c}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0cf475db-201f-2c81-b054-1141b801624d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0cf475db-201f-2c81-b054-1141b801624d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7d6cb4c0-1e3f-709d-328d-a58d4ed32744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7d6cb4c0-1e3f-709d-328d-a58d4ed32744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{312986c4-f472-26d8-3114-3c0a31d0cb80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
