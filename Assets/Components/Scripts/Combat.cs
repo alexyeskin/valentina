@@ -26,7 +26,7 @@ public class Combat : MonoBehaviour {
     private void Awake() {
         attackerStats = gameObject.GetComponentInParent<Stats>();
         attackerStats.HealthChanged += OnAttackerHealthChanged;
-        animationManager = GetComponent<AnimationManager>();
+        animationManager = GetComponentInChildren<AnimationManager>();
         movement = GetComponentInChildren<GeneralMovement>();
     }
     
@@ -51,20 +51,27 @@ public class Combat : MonoBehaviour {
     }
 
     IEnumerator attack() {
+        GameObject target = findTheClosiestTarget();
         canAttack = false;
         // 0.83 animation duration
         // need to speed up animation if attack cooldown less
         float animationWaitDuration = 0.75f / 1.5f;
         animationManager.playAttackAnimation();
+        
+        if (target) {
+            Vector3 newVector = target.transform.position - transform.position;
+            movement.AttackPositionToLookAt = newVector;
+        }
+        
         yield return new WaitForSeconds(animationWaitDuration);
         
-        if (targets.Count != 0) {
-            GameObject target = findTheClosiestTarget();
+        if (target) {
             attack(target);
         }
         
         yield return new WaitForSeconds(0.7f - animationWaitDuration);
         canAttack = true;
+        movement.AttackPositionToLookAt = Vector3.zero;
     }
 
     void attack(GameObject target) {
@@ -74,11 +81,6 @@ public class Combat : MonoBehaviour {
         
         if (targetStats.isDead) {
             removeTarget(target);
-            
-            RandomMovement movement = GetComponentInChildren<RandomMovement>();
-            if (movement) {
-                movement.returnToSpawn();
-            }
         }
     }
     
@@ -89,6 +91,10 @@ public class Combat : MonoBehaviour {
     }
 
     GameObject findTheClosiestTarget() {
+        if (targets.Count == 0) {
+            return null;
+        }
+        
         GameObject theClosiestTarget = targets[0];
         float theSmallestDistance = float.MaxValue;
 

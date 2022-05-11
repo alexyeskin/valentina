@@ -11,6 +11,7 @@ public class GeneralMovement : MonoBehaviour {
 
     public Vector3 currentMovement = Vector3.zero;
     private Vector3 gravityVelocity;
+    public Vector3 AttackPositionToLookAt = Vector3.zero;
 
     public bool isGrounded {
         get {
@@ -24,7 +25,7 @@ public class GeneralMovement : MonoBehaviour {
         }
     }
 
-    public float rotationFactorPerFrame = 0.5f;
+    public float rotationFactorPerFrame = 3f;
     public float walkMovementSpeed = 3f;
     public float currentMovementSpeed = 3f;
     private float gravityValue = -9.81f;
@@ -39,13 +40,13 @@ public class GeneralMovement : MonoBehaviour {
     }
 
     void Update() {
-        //handleRotation();
+        handleRotation();
         handleMovingAnimation();
         characterController.Move(currentMovement * currentMovementSpeed * Time.deltaTime);
         
-        if (currentMovement != Vector3.zero) {
-            modelObject.forward = currentMovement;
-        }
+        // if (currentMovement != Vector3.zero) {
+        //     modelObject.forward = currentMovement;
+        // }
         
         handleGravity();
     }
@@ -71,15 +72,14 @@ public class GeneralMovement : MonoBehaviour {
         positionToLookAt.z = currentMovement.z;
 
         Quaternion currentRotation = modelObject.rotation;
-
-        if (isMovementPressed) {
+        
+        if (AttackPositionToLookAt != Vector3.zero) {
+            Quaternion targetRotarion = Quaternion.LookRotation(AttackPositionToLookAt);
+            modelObject.rotation = Quaternion.Slerp(currentRotation, targetRotarion, rotationFactorPerFrame);
+        } else if (isMovementPressed) {
             Quaternion targetRotarion = Quaternion.LookRotation(positionToLookAt);
             modelObject.rotation = Quaternion.Slerp(currentRotation, targetRotarion, rotationFactorPerFrame);
         }
-    }
-
-    public void rotateTo(Vector3 positionToLookAt) {
-        transform.LookAt(positionToLookAt);
     }
 
     void handleMovingAnimation() {
@@ -87,12 +87,8 @@ public class GeneralMovement : MonoBehaviour {
 
         if (isMovementPressed && !isAnimationWalking) {
             animator.SetBool(isWalkingHash, true);
-            // suspicios behaivor
-            //Debug.Log("Walking");
         } else if (!isMovementPressed && isAnimationWalking) {
             animator.SetBool(isWalkingHash, false);
-            // suspicios behaivor
-            //Debug.Log("Idle");
         }
     }
 }

@@ -9,7 +9,7 @@ public class HealthRegeneration: MonoBehaviour {
     
     private void Awake() {
         stats = GetComponentInParent<Stats>();
-        AnimationManager = GetComponent<AnimationManager>();
+        AnimationManager = GetComponentInChildren<AnimationManager>();
         stats.HealthDecreased += OnHealthDecreased;
         stats.HealthChanged += OnHealthChanged;
     }

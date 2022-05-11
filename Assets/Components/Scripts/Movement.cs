@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
     GeneralMovement movement;
-    AnimationManager animationManager;
 
     [SerializeField]
     Joystick joystick;
 
     private void Awake() {
         movement = GetComponentInChildren<GeneralMovement>();
-        animationManager = GetComponentInParent<AnimationManager>();
     }
 
     void Update() {

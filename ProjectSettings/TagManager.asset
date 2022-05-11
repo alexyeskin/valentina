@@ -7,6 +7,10 @@ TagManager:
   - Enemy
   - Character
   - AttackJoystick
+  - Animation
+  - Movement
+  - UI
+  - Model
   layers:
   - Default
   - TransparentFX

@@ -41,6 +41,7 @@
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/FirstPersonCamera.cs" />
      <Compile Include="Assets/Components/Scripts/Stats.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/FleeUnit.cs" />
+     <Compile Include="Assets/GUI PRO Kit - Casual Game/Scripts/PanelControl.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Flee.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Scripts/Base/Joystick.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs" />
@@ -70,8 +71,10 @@
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/ArriveUnit.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/OffsetPursuitUnit.cs" />
      <Compile Include="Assets/Components/Enemies/Health Bar/HealthIndicator.cs" />
+     <Compile Include="Assets/GUI PRO Kit - Simple Casual/Scripts/PanelControlSimpleCasual.cs" />
      <Compile Include="Assets/Components/Scripts/CameraController.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs" />
+     <Compile Include="Assets/Components/Scripts/Respawning.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/ScreenBoundary3D.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Hide.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/HideUnit.cs" />
@@ -86,6 +89,7 @@
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Spawner.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/VelocityMatch.cs" />
      <Compile Include="Assets/Components/Scripts/RandomMovement.cs" />
+     <Compile Include="Assets/GUI PRO Kit - Casual Game/Scripts/Panel.cs" />
      <Compile Include="Assets/Components/Enemies/Health Bar/Billboard.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Camera/CameraMovement.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs" />
@@ -95,10 +99,12 @@
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/WanderAvoidUnit.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/SeekUnit.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs" />
+     <Compile Include="Assets/GUI PRO Kit - Simple Casual/Scripts/PanelSimpleCasual.cs" />
      <Compile Include="Assets/Scenes/Joystick Pack/Examples/JoystickSetterExample.cs" />
      <Compile Include="Assets/Components/Scripts/GeneralMovement.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Cohesion.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/PursueUnit.cs" />
+     <Compile Include="Assets/Components/Enemies/FloatingText/FloatingTextPresenter.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/ScreenBoundary2D.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/FollowPath.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/WallAvoidance.cs" />
@@ -108,14 +114,33 @@
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/SteeringBasics.cs" />
      <Compile Include="Assets/Packages/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDirectionTranslate.cs" />
      <Compile Include="Assets/Components/Scripts/Movement.cs" />
+     <Compile Include="Assets/GUI PRO Kit - Casual Game/Extensions/UIParticle/UIParticleSystem.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/FollowPathUnit.cs" />
      <Compile Include="Assets/Scenes/UnityMovementAI/Scripts/Units/Movement/Wander1.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Scripts/WaterBase.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Scripts/MeshContainer.cs" />
+     <Compile Include="Assets/Devion Games/Inventory System/Examples/Particle Effects/ShurikenMagic/Scripts/SM_RandomScale.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Scripts/Displace.cs" />
+     <Compile Include="Assets/Devion Games/Third Person Controller/Example/Particles/Impact/Scripts/AutoDestruct.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Scripts/GerstnerDisplace.cs" />
+     <Compile Include="Assets/Devion Games/Inventory System/Examples/Particle Effects/ShurikenMagic/Scripts/SM_TrailFade.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Scripts/PlanarReflection.cs" />
+     <Compile Include="Assets/Devion Games/Inventory System/Examples/Particle Effects/ShurikenMagic/Scripts/SM_Rotate.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Sources/Scripts/Water.cs" />
+     <Compile Include="Assets/Devion Games/Inventory System/Examples/Particle Effects/ShurikenMagic/Scripts/SM_AnimSpeedRandomizer.cs" />
+     <Compile Include="Assets/Devion Games/Inventory System/Examples/Particle Effects/ShurikenMagic/Scripts/SM_DestroyTimed.cs" />
+     <Compile Include="Assets/Devion Games/Triggers/Integrations/UI Widgets/Scripts/Runtime/YesNoDialog.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Scripts/WaterTile.cs" />
+     <Compile Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Scripts/SpecularLighting.cs" />
+     <Compile Include="Assets/Devion Games/Inventory System/Examples/Particle Effects/ShurikenMagic/Scripts/SM_PrefabGenerator.cs" />
+     <None Include="Assets/Devion Games/Standard Assets/Prototyping/Shaders/WorldCoordDiffuse.shader" />
      <None Include="Assets/Scenes/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/SG2_Template_URP.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Triplanar Sampling.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/Default/Dissolve.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Standard PBS/TCP2_Standard PBS Outline.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Include/TCP2_Outline_Behind_SM2.shader" />
+     <None Include="Assets/Devion Games/Inventory System/Changes.txt" />
      <None Include="Assets/Scenes/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/Packages/JMO Assets/Cartoon FX/Shaders/CFX3 Multiply Color.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_VertexDisplacement.txt" />
@@ -132,6 +157,7 @@
      <None Include="Assets/Packages/JMO Assets/Cartoon FX/CartoonFX Free.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/SG2/Vertex Color Albedo.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_MatCap.txt" />
+     <None Include="Assets/GUI PRO Kit - Casual Game/Extensions/UIParticle/hidden particle.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/Default/HSV.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/Default/Old School.shader" />
      <None Include="Assets/Scenes/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
@@ -140,9 +166,11 @@
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/SG2/Animated Dissolve.shader" />
      <None Include="Assets/Scenes/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Variants Base/TCP2_Mobile_OutlineBlending.shader" />
+     <None Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Shaders/WaterInclude.cginc" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Standard PBS/TCP2_Standard PBS Outline (Specular).shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/PBS/Sketch.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Texture Blending.txt" />
+     <None Include="Assets/Devion Games/Triggers/Rename Action Info.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_ShadowHSV.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Variants Base/TCP2_Desktop_OutlineBlending.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates/TCP2_ShaderTemplate_Water.txt" />
@@ -150,11 +178,14 @@
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/SG2_Template_Default.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/Default/Snow Accumulation.shader" />
      <None Include="Assets/Scenes/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets/GUI PRO Kit - Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.shader" />
+     <None Include="Assets/Devion Games/Triggers/Changes.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/TCP2_OutlineOnly Blended.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_NdotL Stylization.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Water.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/Default/Comic Book.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_CurvedWorld.txt" />
+     <None Include="Assets/Devion Games/Third Person Controller/Example/Particles/Impact/Shaders/Additive Alpha8.shader" />
      <None Include="Assets/Scenes/Graphy - Ultimate Stats Monitor/Shaders/GraphMobile.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Standard PBS/TCP2_PBS_Core.cginc" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Variants Base/TCP2_Mobile_Specular.shader" />
@@ -166,6 +197,7 @@
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Variants Base/TCP2_Desktop_Outline.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/TCP2_OutlineOnly SM2.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Ramp Shading LWRP.txt" />
+     <None Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Shaders/FX-Water4.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Include/TCP2_Include.cginc" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/TCP2_Desktop.shader" />
      <None Include="Assets/Scenes/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/ERIC-TIRADO-NORTHWEST-LICENSE.txt" />
@@ -195,6 +227,7 @@
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/PBS/Hand Painted.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Include/TCP2_Outline_Stencil.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Ramp Shading.txt" />
+     <None Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Water4/Sources/Shaders/FX-SimpleWater4.shader" />
      <None Include="Assets/Scenes/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Standard PBS/TCP2_Standard PBS Outline Blended.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Sketch.txt" />
@@ -206,10 +239,13 @@
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Hash Functions.txt" />
      <None Include="Assets/Scenes/Graphy - Ultimate Stats Monitor/Font/Roboto/LICENSE.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates/TCP2_ShaderTemplate_Terrain.txt" />
+     <None Include="Assets/Devion Games/Standard Assets/Water (Pro Only)/Sources/Shaders/FX-Water.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates/TCP2_ShaderTemplate_Default_CurvedWorld.txt" />
+     <None Include="Assets/Devion Games/Third Person Controller/Changes.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_Triplanar.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates/TCP2_ShaderTemplate_PBS.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/Default/Sketch.shader" />
+     <None Include="Assets/GUI PRO Kit - Casual Game/ResourcesData/Shader &amp; Materials/MobileAdditive.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Standard PBS/TCP2_PBS_ShadowMeta.shader" />
      <None Include="Assets/Scenes/Graphy - Ultimate Stats Monitor/Shaders/GraphStandard.shader" />
      <None Include="Assets/Scenes/FXIFIED/common/Shaders/RimLight.shader" />
@@ -219,6 +255,7 @@
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/Water/Lava Cartoon.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/PBS/Outline Behind.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shader Templates 2/Modules/Module_HSV.txt" />
+     <None Include="Assets/Devion Games/Stat System/Changes.txt" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Standard PBS/TCP2_Standard PBS (Specular).shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders Generated/Examples/SG2/Water.shader" />
      <None Include="Assets/Packages/Toony Colors Pro/Shaders/Legacy/Variants Base/TCP2_Mobile_Outline.shader" />
@@ -879,6 +916,12 @@
     <Reference Include="UnityEngine.Advertisements.Editor">
         <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+        <HintPath>/Users/Aliaksandr_Yeskin/Documents/Valentina/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
@@ -924,6 +967,34 @@
     <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
       <Project>{20d4b6be-067a-ac58-e631-a3f589a4e619}</Project>
       <Name>ToonyColorsPro2.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.Triggers.csproj">
+      <Project>{ea9a895a-29c8-676b-3bc6-5055757ce834}</Project>
+      <Name>DevionGames.Triggers</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.StatSystem.csproj">
+      <Project>{0cf475db-201f-2c81-b054-1141b801624d}</Project>
+      <Name>DevionGames.StatSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.Utilities.csproj">
+      <Project>{55752fb3-a3f2-3a3d-6ec6-9ab1db9bf264}</Project>
+      <Name>DevionGames.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.ThirdPersonController.csproj">
+      <Project>{2c69241d-ff52-e735-5c63-2780de39e571}</Project>
+      <Name>DevionGames.ThirdPersonController</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.InventorySystem.csproj">
+      <Project>{24fffc0e-e576-7cf3-0418-e7e110ba64c5}</Project>
+      <Name>DevionGames.InventorySystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.UIWidgets.csproj">
+      <Project>{c46af064-2f1d-2e2f-8bcd-5ee6118ff20c}</Project>
+      <Name>DevionGames.UIWidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.Graphs.csproj">
+      <Project>{2c3d4fdb-f108-c2aa-9daf-054e80c19a1b}</Project>
+      <Name>DevionGames.Graphs</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

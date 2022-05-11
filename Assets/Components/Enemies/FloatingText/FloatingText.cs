@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class FloatingText : MonoBehaviour {
     private TextMeshPro textContainter;
-
-    float lifetime = 3;
-
+    
+    float lifetime = 1.5f;
+    
     public string text;
     public Color textColor = Color.white;
 
@@ -18,7 +19,7 @@ public class FloatingText : MonoBehaviour {
     void Start() {
         textContainter.text = text;
         textContainter.color = textColor;
-        Destroy(gameObject, lifetime);
+        Destroy(gameObject.transform.parent.gameObject, lifetime);
     }
 
     private void LateUpdate() {

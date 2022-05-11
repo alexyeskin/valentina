@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chasing : MonoBehaviour {
     GeneralMovement movement;
     Transform target;
-
+    
     private bool isChasing = false;
     public float chasingMovementSpeed = 5f;
 
@@ -19,7 +19,6 @@ public class Chasing : MonoBehaviour {
         if (isChasing) {
             followTarget();
         }
-
     }
 
     public void startChasing(Transform target) {
@@ -30,6 +29,8 @@ public class Chasing : MonoBehaviour {
 
     public void stopChasing() {
         isChasing = false;
+        movement.currentMovementSpeed = movement.walkMovementSpeed;
+        movement.AttackPositionToLookAt = Vector3.zero;
     }
 
     void followTarget() {
@@ -41,5 +42,8 @@ public class Chasing : MonoBehaviour {
         } else {
             movement.currentMovement = movement.pointToMoveFrom(target.position).normalized;
         }
+        
+        Vector3 newVector = target.transform.position - transform.position;
+        movement.AttackPositionToLookAt = newVector;
     }
 }

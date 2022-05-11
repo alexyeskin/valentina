@@ -10,11 +10,13 @@ ScriptsOnlyBuild:
     - DynamicJoystick
     - FixedJoystick
     - FloatingText
+    - FloatingTextPresenter
     - GeneralMovement
     - HealthIndicator
     - HealthRegeneration
     - Movement
     - RandomMovement
+    - Respawning
     - Stats
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
@@ -128,57 +130,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1822}
-    - Class: 114
       Script: {instanceID: 1824}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 1840}
+      Script: {instanceID: 16264}
     - Class: 114
-      Script: {instanceID: 1970}
+      Script: {instanceID: 16268}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 16398}
     - Class: 114
-      Script: {instanceID: 2170}
+      Script: {instanceID: 16478}
     - Class: 114
-      Script: {instanceID: 2188}
+      Script: {instanceID: 16598}
     - Class: 114
-      Script: {instanceID: 2224}
+      Script: {instanceID: 16616}
     - Class: 114
-      Script: {instanceID: 2228}
+      Script: {instanceID: 16652}
     - Class: 114
-      Script: {instanceID: 2244}
+      Script: {instanceID: 16656}
     - Class: 114
-      Script: {instanceID: 2248}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 16676}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 16870}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 16934}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 17034}
     - Class: 114
-      Script: {instanceID: 2914}
+      Script: {instanceID: 17244}
     - Class: 114
-      Script: {instanceID: 3024}
+      Script: {instanceID: 17342}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 17356}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 17454}
     - Class: 114
-      Script: {instanceID: 3340}
+      Script: {instanceID: 17502}
     - Class: 114
-      Script: {instanceID: 3416}
+      Script: {instanceID: 17628}
     - Class: 114
-      Script: {instanceID: 3420}
+      Script: {instanceID: 17770}
     - Class: 114
-      Script: {instanceID: 3598}
+      Script: {instanceID: 17844}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 17848}
     - Class: 114
-      Script: {instanceID: 3952}
+      Script: {instanceID: 18026}
+    - Class: 114
+      Script: {instanceID: 18094}
+    - Class: 114
+      Script: {instanceID: 18154}
+    - Class: 114
+      Script: {instanceID: 18382}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -486,7 +492,7 @@ ScriptsOnlyBuild:
     className: FloatingText
   - hash:
       serializedVersion: 2
-      Hash: 6fd480d93ce6922ce8e0e24e8b3f1b9e
+      Hash: 1a027c8262062daab342f46f73f90d55
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnimationManager
@@ -792,6 +798,12 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
+      Hash: 90a4d2a67460fb044b0f90e05a5a5878
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Respawning
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -996,7 +1008,7 @@ ScriptsOnlyBuild:
     className: VelocityMatch
   - hash:
       serializedVersion: 2
-      Hash: 58707418064778214a89ee0669482deb
+      Hash: fefeb8c7cfd5f4c12fcbdd9e9b66ea4a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RandomMovement
@@ -1134,7 +1146,7 @@ ScriptsOnlyBuild:
     className: JoystickSetterExample
   - hash:
       serializedVersion: 2
-      Hash: 68a2708d12c4d11925632318a6e81c64
+      Hash: 9ba76760dcd0cee4d0672487cdf3c5f3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GeneralMovement
@@ -1150,6 +1162,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityMovementAI
     className: PursueUnit
+  - hash:
+      serializedVersion: 2
+      Hash: c84266cb0867b73f2ddeb64a1e347a95
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingTextPresenter
   - hash:
       serializedVersion: 2
       Hash: dc9e318326bf89001e1c59c6bb98abc2
@@ -1318,6 +1336,24 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityMovementAI
     className: Wander1
+  - hash:
+      serializedVersion: 2
+      Hash: e709540eeab44e0a072da4c8ff694992
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine.UI.Extensions
+    className: UIParticleSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 0e60655a65105e2189bae4c8749909ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: LayerLab
+    className: PanelControl
+  - hash:
+      serializedVersion: 2
+      Hash: f7b138083d0a0218ac6acbbb940de3d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: LayerLab
+    className: Panel
   platform: 9
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

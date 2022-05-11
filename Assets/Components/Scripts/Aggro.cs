@@ -20,25 +20,24 @@ public class Aggro : MonoBehaviour {
             Stats enemyStats = other.GetComponentInParent<Stats>();
 
             if (enemyStats.currentHealth > 0 && characterStats.currentHealth > 0) {
-                Chasing enemyChasing = other.GetComponentInChildren<Chasing>();
                 RandomMovement enemyMovement = other.GetComponentInChildren<RandomMovement>();
                 Combat enemyCombat = other.GetComponent<Combat>();
 
-                if (enemyChasing) {
-                    enemyChasing.startChasing(transform);
-                }
-
                 if (enemyMovement) {
-                    enemyMovement.stopPatrol();
+                    enemyMovement.Aggro(transform);
+                } else {
+                    Debug.Log("No component RandomMovement");
                 }
 
-                characterCombat.addTarget(other.gameObject);
+                if (!enemyMovement.isReturning) {
+                    characterCombat.addTarget(other.gameObject);
 
-                if (enemyCombat) {
-                    enemyCombat.addTarget(gameObject);
+                    if (enemyCombat) {
+                        enemyCombat.addTarget(gameObject);
+                    } else {
+                        Debug.Log("No component Combat");
+                    }
                 }
-            } else {
-                Debug.Log("Target have't added. It's dead.");
             }
         }
     }
